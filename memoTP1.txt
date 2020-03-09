@@ -1,0 +1,11 @@
+Vous pouvez noter dans cet exemple que l'interface est dans un package et que la classe d'implantation est dans un autre. Dans un cas réel, la spécification d'un service peut être composé de plusieurs interfaces accompagnées de javaBeans ou de classes d'exception. 
+
+On remarque également que le code d'utilisation (méthode use) n'est pas altéré si on ajoute que les logs doivent aller dans un fichier. Les modifications portent uniquement sur le code d'intégration
+
+javaBean = constructeur vide ??
+
+injection des dépendances exemples : on choisit le logger que que la calculatrice va utiliser, on crée puis démarre le logger, puis on "setLogger" de la calculatrice avant d'utiliser la calculatrice, ainsi on peut choisir le type de logger de la calculette avant démarrage
+
+Si nous voulons changer le logger de la calculatrice, il n'est pas nécessaire de modifier notre programme si on utilise Spring. Il suffit de changer le fichier XML
+
+Au lieu d'utiliser un XML, on peut aussi config via une classe Java ---> dernière section TP 1

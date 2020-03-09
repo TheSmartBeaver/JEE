@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7f13a77-e8cd-4468-890b-fa5d6a5e141f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YZITpOpA2RAjX3ZA35I2ps0shh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/myapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Donnees_PR/DPR" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/myapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestSpring">
+    <configuration name="TestLoggerServices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myapp.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="myapp.tests.TestLoggerServices" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myapp.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="myapp.tests" />
+      <option name="MAIN_CLASS_NAME" value="myapp.tests.TestSpring" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpringJUnitIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myapp.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="myapp.tests" />
+      <option name="MAIN_CLASS_NAME" value="myapp.tests.TestSpringJUnitIntegration" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSpring" />
+        <item itemvalue="JUnit.TestSpringJUnitIntegration" />
+        <item itemvalue="JUnit.TestLoggerServices" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7f13a77-e8cd-4468-890b-fa5d6a5e141f" name="Default Changelist" comment="" />
+      <created>1583143699955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583143699955</updated>
+      <workItem from="1583143701124" duration="2849000" />
+      <workItem from="1583320504015" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="531" y="202" key="#Project_Structure" timestamp="1583143775673">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="531" y="202" key="#Project_Structure/0.28.1920.1024@0.28.1920.1024" timestamp="1583143775673" />
+    <state x="562" y="210" width="787" height="660" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583143825528">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="562" y="210" width="787" height="660" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1583143825528" />
+    <state x="547" y="248" width="816" height="584" key="FileChooserDialogImpl" timestamp="1583320555824">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="547" y="248" width="816" height="584" key="FileChooserDialogImpl/0.28.1920.1024@0.28.1920.1024" timestamp="1583320555824" />
+    <state width="1874" height="269" key="GridCell.Tab.0.bottom" timestamp="1583146563264">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state width="1874" height="269" key="GridCell.Tab.0.bottom/0.28.1920.1024@0.28.1920.1024" timestamp="1583146563264" />
+    <state width="1874" height="269" key="GridCell.Tab.0.center" timestamp="1583146563263">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state width="1874" height="269" key="GridCell.Tab.0.center/0.28.1920.1024@0.28.1920.1024" timestamp="1583146563263" />
+    <state width="1874" height="269" key="GridCell.Tab.0.left" timestamp="1583146563262">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state width="1874" height="269" key="GridCell.Tab.0.left/0.28.1920.1024@0.28.1920.1024" timestamp="1583146563262" />
+    <state width="1874" height="269" key="GridCell.Tab.0.right" timestamp="1583146563264">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state width="1874" height="269" key="GridCell.Tab.0.right/0.28.1920.1024@0.28.1920.1024" timestamp="1583146563264" />
+    <state x="443" y="118" width="1026" height="844" key="SettingsEditor" timestamp="1583145059581">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="443" y="118" width="1026" height="844" key="SettingsEditor/0.28.1920.1024@0.28.1920.1024" timestamp="1583145059581" />
+    <state x="732" y="320" width="448" height="439" key="chooseDestDirectoryDialog" timestamp="1583144158888">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="732" y="320" width="448" height="439" key="chooseDestDirectoryDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1583144158888" />
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1583320527926">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1583320527926" />
+    <state x="632" y="436" width="648" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583143792048">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="632" y="436" width="648" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.28.1920.1024@0.28.1920.1024" timestamp="1583143792048" />
+    <state x="269" y="141" width="1374" height="797" key="new project wizard" timestamp="1583145026088">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="269" y="141" width="1374" height="797" key="new project wizard/0.28.1920.1024@0.28.1920.1024" timestamp="1583145026088" />
+    <state x="640" y="225" width="632" height="629" key="spring file set editor" timestamp="1583144867096">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="640" y="225" width="632" height="629" key="spring file set editor/0.28.1920.1024@0.28.1920.1024" timestamp="1583144867096" />
+  </component>
+</project>
