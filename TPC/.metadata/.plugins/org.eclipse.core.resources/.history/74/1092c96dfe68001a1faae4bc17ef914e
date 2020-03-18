@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<jsp:useBean id="person" scope="session" class="myapp.Person"/>
+
+<%! Person person = new Person(); %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Person</title>
+    </head>
+    
+    <body>
+        <h2>Person</h2>
+        <table>
+            <tr>
+                <th>Attributs</th>
+                <th>Valeurs</th>
+            </tr>
+            
+            <tr>
+                <td>ID</td>
+                <td><%= person.getId() %></td>
+            </tr>
+            
+            <tr>
+                <td>Nom</td>
+                <td><%= person.getName() %></td>
+            </tr>
+            
+            <tr>
+                <td>Courriel</td>
+                <td><%= person.getMail() %></td>
+            </tr>
+        </table>
+</html>

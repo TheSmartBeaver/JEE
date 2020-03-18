@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class MyServlet
  */
 									/* création de chemin se terminant par html = pointe vers ma servlet */
-@WebServlet({ "/MyServlet", "/mySERVLET", "*.html" })
+@WebServlet({ "/MyServlet", "/mySERVLET", "*.html", "/myPerson" })
 public class MyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -48,7 +48,12 @@ public class MyServlet extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		if(request.getServletPath().contains("MyServlet")) {
 			request.getRequestDispatcher("/index.jsp").forward(request, response);
-		} else if(request.getServletPath().contains(".html")) { 
+		}
+			else if(request.getServletPath().contains("myPerson")) {
+				request.getRequestDispatcher("/WEB-INF/person.jsp").forward(request, response);
+				
+			}
+		else if(request.getServletPath().contains(".html")) { 
 			response.getWriter().append(request.getServletPath()); /*On affiche le chemin sur la page*/
 			response.getWriter().append(request.getParameter("a"));
 			response.getWriter().append(request.getParameter("b"));

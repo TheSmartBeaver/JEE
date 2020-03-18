@@ -152,3 +152,16 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-18 09:24:28.545
 !MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+!SESSION 2020-03-18 09:44:42.370 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_242
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-03-18 09:45:08.224
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-18 10:09:06.679
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).

@@ -1,0 +1,21 @@
+<%@page import="java.util.Date" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<jsp:useBean id="marin" scope="page"  class="org.paumard.cours.model.Marin">
+    <jsp:setProperty name="marin" property="nom"    value="Surcouf"/>
+    <jsp:setProperty name="marin" property="prenom" param="prenom"/>
+    <jsp:setProperty name="marin" property="age"    param="age"/>
+</jsp:useBean>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- Expression java intégré NE pas oublier "=" -->
+	<h2> HELLO LES ENFANTS <%= new Date() %> </h2>
+</body>
+</html>
