@@ -3,4 +3,9 @@ Dans "Servers" en bas on peut double-cliquer pour plus de paramètres
 
 2 chemins différents MyServlet ou mySERVLET
 On peut taper un chemin quelconque finissant par .html pour faire afficher le chemin
-On peut accompagner URL avec paramètre avec "?" ex : /gg/xd.html?a=aaaaa&b=bbbb 
+On peut accompagner URL avec paramètre avec "?" ex : /gg/xd.html?a=aaaaa&b=bbbb
+
+COURS EXISTANT AVEC SERVLET ! rajouté le 18 mars
+plusieurs objets avec différentes durée de vie ! http://jean-luc.massat.perso.luminy.univ-amu.fr/ens/jee/servlet.html#scope 
+
+Qu'est ce qu'un bean ?? http://blog.paumard.org/cours/servlet/chap05-jsp-bean-usage.html

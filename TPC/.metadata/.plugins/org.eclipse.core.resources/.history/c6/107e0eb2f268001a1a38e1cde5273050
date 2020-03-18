@@ -47,7 +47,7 @@ public class MyServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		if(request.getServletPath().contains("MyServlet")) {
-			request.getRequestDispatcher("/index.jsp").forward(request, response);
+			response.getWriter().append("Hello");
 		} else if(request.getServletPath().contains(".html")) { 
 			response.getWriter().append(request.getServletPath()); /*On affiche le chemin sur la page*/
 			response.getWriter().append(request.getParameter("a"));
