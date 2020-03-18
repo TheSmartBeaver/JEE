@@ -1,0 +1,6 @@
+fichier config tomcat apparu dans Project Explorer "Servers"
+Dans "Servers" en bas on peut double-cliquer pour plus de paramètres
+
+2 chemins différents MyServlet ou mySERVLET
+On peut taper un chemin quelconque finissant par .html pour faire afficher le chemin
+On peut accompagner URL avec paramètre avec "?" ex : /gg/xd.html?a=aaaaa&b=bbbb 

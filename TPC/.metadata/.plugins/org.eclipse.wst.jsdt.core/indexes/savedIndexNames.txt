@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/totor/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2282042086.index
+3569211185.index
+4114129427.index
+109241207.index
+3010754799.index
+2006544191.index
+2573197714.index
