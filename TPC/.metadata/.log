@@ -165,3 +165,33 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-18 10:09:06.679
 !MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-03-19 22:53:36.390
+!MESSAGE Server Tomcat v9.0 Server at localhost (perso) failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-03-19 22:54:11.721
+!MESSAGE Server Tomcat v9.0 Server at localhost (perso) failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-03-19 22:54:18.648
+!MESSAGE Server Tomcat v9.0 Server at localhost (perso) failed to start.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-19 22:54:56.639
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-19 22:55:50.034
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-03-19 22:56:16.808
+!MESSAGE Server Tomcat v9.0 Server at localhost (perso) failed to start.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-19 23:06:04.120
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-19 23:06:05.153
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-19 23:06:07.696
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-19 23:06:19.263
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost (perso) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).

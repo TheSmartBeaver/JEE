@@ -8,6 +8,9 @@ public class Person implements Serializable {
     private Integer id;
     private String name;
     private String mail;
+    
+    private String errorName;
+    private String errorMail;
 
     public Person() {
     }
@@ -46,5 +49,21 @@ public class Person implements Serializable {
     public void setMail(String mail) {
         this.mail = mail;
     }
+
+	public String getErrorName() {
+		return errorName;
+	}
+
+	public void setErrorName(String errorName) {
+		this.errorName = errorName;
+	}
+
+	public String getErrorMail() {
+		return errorMail;
+	}
+
+	public void setErrorMail(String errorMail) {
+		this.errorMail = errorMail;
+	}
 
 }
