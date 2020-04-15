@@ -1,6 +1,8 @@
 INDEX VERSION 1.131
 /home/totor/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2282042086.index
 /myapp/src
+/home/totor/Documents/M1/JEE/TP_D/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4252779718.index
+/My_TP_MVC/src
 /home/totor/Documents/M1/JEE/TP_D/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/240169732.index
 /app2/src
 /home/totor/Documents/M1/JEE/TP_D/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1084292357.index
