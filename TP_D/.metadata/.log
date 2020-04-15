@@ -3441,3 +3441,45 @@ java.lang.OutOfMemoryError: Java heap space
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 09:36:59.251
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:02:54.946
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:02:54.948
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:02:55.010
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:04:03.716
+!MESSAGE The artifact org.hibernate:hibernate-validator:jar:7.0.0.Alpha1 has been relocated to org.hibernate.validator:hibernate-validator:jar:7.0.0.Alpha1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:23.107
+!MESSAGE The artifact org.hibernate:hibernate-validator:jar:7.0.0.Alpha1 has been relocated to org.hibernate.validator:hibernate-validator:jar:7.0.0.Alpha1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:23.177
+!MESSAGE The artifact org.hibernate:hibernate-validator:jar:7.0.0.Alpha1 has been relocated to org.hibernate.validator:hibernate-validator:jar:7.0.0.Alpha1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:23.511
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:23.518
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:23.525
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:24.901
+!MESSAGE The artifact org.hibernate:hibernate-validator:jar:7.0.0.Alpha1 has been relocated to org.hibernate.validator:hibernate-validator:jar:7.0.0.Alpha1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:27.809
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:14:27.831
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:15:33.627
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-15 10:15:33.629
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

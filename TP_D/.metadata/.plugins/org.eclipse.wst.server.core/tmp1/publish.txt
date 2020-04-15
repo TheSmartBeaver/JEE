@@ -1,3 +1,4 @@
 #Tomcat publish data
-#Wed Apr 15 09:37:10 CEST 2020
+#Wed Apr 15 10:15:34 CEST 2020
+org.eclipse.jst.jee.server\:/binary\:/home/totor/.m2/repository/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar=WEB-INF/lib/spring-web-5.1.5.RELEASE.jar
 org.eclipse.jst.jee.server\:/binary\:/home/totor/.m2/repository/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar=WEB-INF/lib/spring-web-5.2.4.RELEASE.jar
