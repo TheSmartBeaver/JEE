@@ -34,14 +34,17 @@ public class SpringStart implements WebApplicationInitializer {
         servlet.setLoadOnStartup(1);
         servlet.addMapping("*.htm");
         servlet.addMapping("/actions/*");
+        System.out.println("fin onStartup");
     }
     
     @Bean
     public ViewResolver viewResolver() {
+    	System.out.println("Début ViewResolver");
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
         viewResolver.setPrefix("/WEB-INF/jsp/");
         viewResolver.setSuffix(".jsp");
+        System.out.println("retour ViewResolver");
         return viewResolver;
     }
 
