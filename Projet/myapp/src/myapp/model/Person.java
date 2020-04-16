@@ -12,12 +12,21 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.PostUpdate;
 import javax.persistence.PreUpdate;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
+import javax.persistence.UniqueConstraint;
 import javax.persistence.Version;
 
 @Entity(name = "Person")
+
+@Table(name = "TPerson",
+   uniqueConstraints = {
+      @UniqueConstraint(columnNames = {
+         "first_name", "birth_day"
+      })
+   })
 public class Person implements Serializable {
 
    private static final long serialVersionUID = 1L;

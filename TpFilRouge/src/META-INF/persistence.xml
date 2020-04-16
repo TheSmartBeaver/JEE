@@ -20,7 +20,6 @@
             <property name="hibernate.dialect"
                 value="org.hibernate.dialect.HSQLDialect" />
         </properties>
-        
     </persistence-unit>
 
 </persistence>

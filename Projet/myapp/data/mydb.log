@@ -1,2 +1,12 @@
 /*C4*/SET SCHEMA PUBLIC
-DISCONNECT
+\u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
+\u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)
+/*C5*/SET SCHEMA PUBLIC
+\u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
+\u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)
+/*C4*/INSERT INTO TPERSON VALUES(4,NULL,'LOLILOL',0)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO TPERSON VALUES(5,'3898-04-17','Victorinne',0)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
