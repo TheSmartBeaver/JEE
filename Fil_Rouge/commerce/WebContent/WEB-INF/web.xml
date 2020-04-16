@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>CreationClient</servlet-name>
+		<servlet-class>com.sdzee.tp.servlets.CreationClient</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreationCommande</servlet-name>
+		<servlet-class>com.sdzee.tp.servlets.CreationCommande</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CreationClient</servlet-name>
+		<url-pattern>/creationClient</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreationCommande</servlet-name>
+		<url-pattern>/creationCommande</url-pattern>
+	</servlet-mapping>
+</web-app>

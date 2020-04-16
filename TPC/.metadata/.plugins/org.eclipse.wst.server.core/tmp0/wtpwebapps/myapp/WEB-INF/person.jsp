@@ -4,6 +4,8 @@
 
 <jsp:useBean id="person" scope="session" class="myapp.Person"/>
 <jsp:setProperty  name="person"  property="name"  value="Albert" />
+<jsp:setProperty  name="person"  property="id"  value="1" />
+<jsp:setProperty  name="person"  property="mail"  value="beber@lol.fr" />
 
 
 <!DOCTYPE html>
@@ -27,7 +29,7 @@
             </tr>
             
             <tr>
-                <td><h3>Nom</h3></td>
+                <td>Nom</td>
                 <td><%= person.getName() %></td>
             </tr>
             
