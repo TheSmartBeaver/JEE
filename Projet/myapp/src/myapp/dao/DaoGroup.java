@@ -1,5 +1,6 @@
 package myapp.dao;
 
+import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -9,18 +10,10 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 import javax.persistence.TypedQuery;
 
+import myapp.model.Group;
 import myapp.model.Person;
 
-public class Dao {
-
-	/*DAO = objet d'accès aux données */
-	
-	/*Pour agir sur les entités nous devons récupérer à partir de l'usine une instance
-	 * de l'interface EntityManager. Celle-ci va permettre les opérations CRUD de persistance
-	 * sur les entités (Create, Read, Update et Delete). Un EntityManager ne supporte pas le
-	 * multi-threading. Il doit donc être créé et détruit à chaque utilisation par un thread.
-	 * Cette création est une opération peu coûteuse qui peut se reproduire un grand nombre de
-	 * fois (contrairement à l'usine).*/
+public class DaoGroup implements IGroupDao {
 	
    private EntityManagerFactory factory = null;
 
@@ -41,21 +34,6 @@ private EntityManager newEntityManager() {
    return (em);
 }
 
-   
-//Nouvelle version simplifiée
-public Person addPerson(Person p) {
-EntityManager em = null;
-try {
-   em = newEntityManager();
-   // utilisation de l'EntityManager
-   em.persist(p);
-   em.getTransaction().commit();
-   System.err.println("addPerson witdh id=" + p.getId());
-   return (p);
-} finally {
-   closeEntityManager(em);
-}
-}
 
 //Fermer un EM et défaire la transaction si nécessaire
 private void closeEntityManager(EntityManager em) {
@@ -74,14 +52,14 @@ if (em != null) {
 }
 
 
-	public Person findPerson(long id) {
+	public Group findGroup(long id) {
 	    EntityManager em = null;
 	    try {
 	        em = factory.createEntityManager();
 	        em.getTransaction().begin();
 	        // utilisation de l'EntityManager
-	        Person p = em.find(Person.class, id);
-	        return p;
+	        Group g = em.find(Group.class, id);
+	        return g;
 	    } finally {
 	      if (em != null) {
 	         em.close();
@@ -99,8 +77,8 @@ if (em != null) {
 	        em = factory.createEntityManager();
 	        em.getTransaction().begin();
 	        int nb = 0;
-	        nb += em.createQuery("DELETE FROM Person").executeUpdate();
-	        System.out.println(nb + " entities deleted");
+	        nb += em.createQuery("DELETE FROM Group").executeUpdate();
+	        System.out.println(nb + " entities Group deleted");
 	        em.getTransaction().commit();
 	    } finally {
 	      if (em != null) {
@@ -108,17 +86,43 @@ if (em != null) {
 	      }
 	    }
 	}
-	
-	public List<Person> findAllPersons() {
-	    EntityManager em = null;
+
+	@Override
+	public List<Group> findAllGroups() {
+		EntityManager em = null;
 	    try {
 	        em = newEntityManager();
-	        String query = "SELECT p FROM Person p";
-	        TypedQuery<Person> q = em.createQuery(query, Person.class);
+	        String query = "SELECT q FROM Group q";
+	        TypedQuery<Group> q = em.createQuery(query, Group.class);
 	        return q.getResultList();
 	    } finally {
 	        closeEntityManager(em);
 	    }
+	}
+
+	@Override
+	public void saveGroup(Group g) {
+		EntityManager em = null;
+		try {
+		   em = newEntityManager();
+		   // utilisation de l'EntityManager
+		   //merge à la pace de persist pour remplacer au cas où existe ??
+		   em.merge(g);
+		   em.getTransaction().commit();
+		   System.err.println("addGroup witdh id=" + g.getId());
+		} finally {
+		   closeEntityManager(em);
+		}
+	}
+	
+	public void addPersonInGroup(Person p, long id_group) {
+		EntityManager em = null;
+		try {
+		   em = newEntityManager();
+		   /////////////////////////
+		} finally {
+		   closeEntityManager(em);
+		}
 	}
 
 }

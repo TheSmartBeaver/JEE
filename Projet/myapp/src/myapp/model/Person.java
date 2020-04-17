@@ -2,7 +2,7 @@ package myapp.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Set;
+//import java.util.Set;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+//import javax.persistence.JoinColumn;
+//import javax.persistence.ManyToOne;
 import javax.persistence.PostUpdate;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
@@ -32,15 +34,37 @@ public class Person implements Serializable {
    private static final long serialVersionUID = 1L;
 
    @Id()
-   @GeneratedValue(strategy = GenerationType.AUTO)
-   private long id;
+   //@GeneratedValue(strategy = GenerationType.AUTO)
+   //TODO: remettre plus tard ??
+   private long id_Person;
 
    @Basic(optional = false)
    @Column(name = "first_name", length = 200,
       nullable = false, unique = true)
    private String firstName;
+   
+   @Basic(optional = false)
+   @Column(name = "last_name", length = 200,
+      nullable = false, unique = true)
+   private String lastName;
+   
+   @Basic(optional = true)
+   @Column(name = "mail", length = 200, 
+   		unique = true)
+   private String mail;
+   
+   @Basic(optional = true)
+   @Column(name = "site_web", length = 200, 
+   		unique = true)
+   private String website;
+   
+   //TODO: Trouver moyen sécuriser de stocker MDP ??
+   @Basic(optional = false)
+   @Column(name = "password", length = 200,
+      nullable = false, unique = true)
+   private String password;
 
-   @Basic()
+@Basic()
    @Temporal(TemporalType.DATE)
    @Column(name = "birth_day")
    private Date birthDay;
@@ -55,10 +79,11 @@ public class Person implements Serializable {
       super();
    }
 
-   public Person(String firstName, Date birthDay) {
+   public Person(String firstName, String lastName, String password) {
       super();
       this.firstName = firstName;
-      this.birthDay = birthDay;
+      this.lastName = lastName;
+      this.password = password;
    }
 
    @PreUpdate
@@ -79,11 +104,11 @@ public class Person implements Serializable {
    }
 
    public long getId() {
-      return id;
+      return id_Person;
    }
 
    public void setId(long id) {
-      this.id = id;
+      this.id_Person = id;
    }
 
    public String getFirstName() {
@@ -109,5 +134,37 @@ public class Person implements Serializable {
    public void setVersion(long version) {
       this.version = version;
    }
+   
+   public String getLastName() {
+	return lastName;
+}
+
+public void setLastName(String lastName) {
+	this.lastName = lastName;
+}
+
+public String getMail() {
+	return mail;
+}
+
+public void setMail(String mail) {
+	this.mail = mail;
+}
+
+public String getWebsite() {
+	return website;
+}
+
+public void setWebsite(String website) {
+	this.website = website;
+}
+
+public String getPassword() {
+	return password;
+}
+
+public void setPassword(String password) {
+	this.password = password;
+}
 
 }

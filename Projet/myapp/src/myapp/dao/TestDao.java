@@ -14,26 +14,34 @@ import javax.persistence.Persistence;
 import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 
+import myapp.model.Group;
 import myapp.model.Person;
+import net.bytebuddy.asm.Advice.Exit;
 
 public class TestDao {
 
-   static Dao dao;
+   static DaoPerson daoPerson;
+   static DaoGroup daoGroup;
 
    @BeforeAll
    public static void beforeAll() {
-      dao = new Dao();
-      dao.init();
+      daoPerson = new DaoPerson();
+      daoGroup = new DaoGroup();
    }
 
    @AfterAll
    public static void afterAll() {
-      dao.close();
+	  daoPerson.close();
+      daoGroup.close();
    }
 
    @BeforeEach
    public void setUp() {
-      // pour plus tard
+	   daoPerson.init();
+	   daoPerson.clearDatabase(); /*A enlever après ??*/
+	   
+	   daoGroup.init();
+	   daoGroup.clearDatabase();
    }
 
    @AfterEach
@@ -53,9 +61,12 @@ public class TestDao {
 	    EntityManager em = emf.createEntityManager();    
 	    EntityTransaction transac = em.getTransaction();
 	    transac.begin();
-	    Person nouvellePersonne = new Person();
-	    nouvellePersonne.setFirstName("LOLILOL");
-	    dao.addPerson(nouvellePersonne);
+	    Person nouvellePersonne = new Person("Painbeurre", "Totor", "password");
+	    nouvellePersonne.setId(1);
+	    
+	    daoPerson.addPerson(nouvellePersonne);
+	    System.out.println("Liste de toutes les personnes "+daoPerson.findAllPersons());
+	    
    }
    
    /*Vérification 1 : Ajoutez un test unitaire afin de valider la création d'une personne et sa relecture.
@@ -64,34 +75,43 @@ public class TestDao {
    public void testCreationEtRelecturePersonne(){
 	   System.out.println();
 	   
-       Person p = new Person();
-       p.setFirstName("Victorinne");
-       Date birthday = new Date();
-       birthday.setYear(1998);
-       birthday.setMonth(3);
-       birthday.setDate(17);
-       p.setBirthDay(birthday);
-
-       System.out.println("Je add Victorinette");
-       dao.addPerson(p);
-       System.out.println("gg c'est add");
-       Person pulledPerson = dao.findPerson(5);
-       System.out.println("J'ai récup Victorinette");
+       Person p = new Person("Painbeurrette", "Totorinette", "password");
+       p.setId(1);
+       p.setBirthDay(new Date());
+	   p.setMail("aaaaaaaa@gmail.com");
+	   p.setWebsite("monWebsite");
+	    
+       daoPerson.savePerson(p); /*Utilisation de savePerson et non add*/
+       System.out.println("On cherche à récup person d'id : "+p.getId());
+       System.out.println("Liste de toutes les personnes "+daoPerson.findAllPersons());
+       Person pulledPerson = daoPerson.findPerson(p.getId());
+       System.out.println("J'ai récup Victorinette "+pulledPerson);
+       System.out.println(pulledPerson.getMail() +" "+pulledPerson.getPassword());
+       //System.exit(1);
        /*TODO: Comment comparer objets par champs et non références ???*/
        Assertions.assertEquals(pulledPerson, p);
 
    }
+   
+   @Test
+   public void testAddInGroupAndRemoveIt() {
+	   Person p = new Person("Painbeurre", "Tartiflette", "password");
+	   p.setId(10);
+       daoPerson.addPerson(p);
+       Group g = new Group("Noobs");
+       g.setId(1);
+       daoGroup.saveGroup(g);
+       System.out.println("Group avvec Tartiflette ?? " + daoGroup.findGroup(g.getId()));
+       //System.exit(1);
+       
+   }
+   
 
    /*Testez la génération des erreurs dues à deux personnes ayant le même prénom (remarquez la clause unique
    de la propriété firstName).*/
    @Test
    public void test2PersonWithSameId(){
 
-   }
-
-   @Test
-   public void testFindAllPerson(){
-       System.out.println("Liste de toutes les personnes "+dao.findAllPersons());
    }
 
 }
