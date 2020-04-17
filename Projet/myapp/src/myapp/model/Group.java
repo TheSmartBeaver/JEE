@@ -52,7 +52,7 @@ public class Group implements Serializable {
 	      nullable = false, unique = true)
 	   private String groupName;
 	   
-	   @ElementCollection
+	   //@ElementCollection
 	   @OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE },
 			      fetch = FetchType.LAZY, mappedBy = "personGroup")
 	   /*Mon OneToMany empêche persistence des personnes dans le groupe ?? why ?*/
@@ -112,7 +112,11 @@ public class Group implements Serializable {
 	   }
 
 	public void addPersonInGroup(Person p) {
-		personsInGroup.add(p);
+		if (personsInGroup == null) {
+	         personsInGroup = new HashSet<>();
+	      }
+	      personsInGroup.add(p);
+	      p.setPersonGroup(this);
 	}
 
 

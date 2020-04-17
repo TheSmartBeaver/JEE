@@ -155,7 +155,19 @@ if (em != null) {
 		}
 
 		public void removePerson(long id) {
-			
+			EntityManager em = null;
+		    try {
+		        em = factory.createEntityManager();
+		        em.getTransaction().begin();
+		        int nb = 0;
+		        nb += em.createQuery("DELETE FROM Person Where id = "+id).executeUpdate();
+		        System.out.println(nb + " entities deleted");
+		        em.getTransaction().commit();
+		    } finally {
+		      if (em != null) {
+		         em.close();
+		      }
+		    }
 		}
 
 }

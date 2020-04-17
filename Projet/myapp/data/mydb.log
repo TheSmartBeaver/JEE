@@ -1,3 +1,2 @@
-/*C2*/SET SCHEMA PUBLIC
+/*C6*/SET SCHEMA PUBLIC
 \u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
-\u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)

@@ -106,7 +106,7 @@ public class TestDao {
        System.err.println("Les personnes du groupe avant insertion : "+ g.getPersonsInGroup());
        daoGroup.saveGroup(g);
        System.err.println("Les personnes du groupe après insertion : "+daoGroup.findGroup(g.getId()).getPersonsInGroup());
-       System.exit(1);
+       
 
    }
    
@@ -114,16 +114,19 @@ public class TestDao {
    public void testAddInGroupAndRemoveIt() {
 	   Person p = new Person("Painbeurre", "Tartiflette", "password");
 	   p.setId(10);
+	   System.out.println("111111111 "+p);
        daoPerson.addPerson(p);
        Group g = new Group("Noobs");
        g.setId(1);
+       System.out.println("222222222 "+p);
+       g.addPersonInGroup(p);
+       System.err.println("Les personnes du groupe avant insertion : "+ g.getPersonsInGroup());
        daoGroup.saveGroup(g);
-       System.out.println("Group avvec Tartiflette ?? " + daoGroup.findGroup(g.getId()));
-       daoGroup.addPersonInGroup(p, g.getId());
-       
-       System.out.println("Les personnes du groupe : "+daoGroup.findGroup(g.getId()).getPersonsInGroup());
+       System.err.println("Les personnes du groupe après insertion : "+daoGroup.findGroup(g.getId()).getPersonsInGroup());
+       //TODO: faire remove Person pour voir si....
+       daoPerson.removePerson(10);
+       System.err.println("Les personnes du groupe après suppression : "+daoGroup.findGroup(g.getId()).getPersonsInGroup());
        System.exit(1);
-       
    }
    
 

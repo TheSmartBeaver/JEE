@@ -106,13 +106,6 @@ if (em != null) {
 		try {
 		   em = newEntityManager();
 		   //merge à la pace de persist pour remplacer au cas où existe ??
-		   for(Person p : g.getPersonsInGroup()) {
-			   System.err.println("J'ai ancré "+p);
-			   em.merge(p);
-			   em.flush();
-			   em.clear();
-		   }
-		   
 		   em.merge(g);
 		   em.getTransaction().commit();
 		   System.err.println("addGroup witdh id=" + g.getId());

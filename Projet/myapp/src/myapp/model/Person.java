@@ -171,4 +171,14 @@ public void setPassword(String password) {
 	this.password = password;
 }
 
+public Group getPersonGroup() {
+	return personGroup;
+}
+
+public void setPersonGroup(Group personGroup) {
+	this.personGroup = personGroup;
+}
+
+
+
 }
