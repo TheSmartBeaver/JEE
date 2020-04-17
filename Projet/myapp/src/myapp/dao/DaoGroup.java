@@ -107,6 +107,13 @@ if (em != null) {
 		   em = newEntityManager();
 		   // utilisation de l'EntityManager
 		   //merge à la pace de persist pour remplacer au cas où existe ??
+		   for(Person p : g.getPersonsInGroup()) {
+			   System.err.println("J'ai ancré "+p);
+			   em.merge(p);
+			   em.flush();
+			   em.clear();
+		   }
+		   
 		   em.merge(g);
 		   em.getTransaction().commit();
 		   System.err.println("addGroup witdh id=" + g.getId());
@@ -119,7 +126,10 @@ if (em != null) {
 		EntityManager em = null;
 		try {
 		   em = newEntityManager();
-		   /////////////////////////
+		   Group g = findGroup(id_group);
+		   g.addPersonInGroup(p);
+		   System.out.println("Nous avons ajouté la personnes dans ce groupe : "+g );
+		   saveGroup(g);
 		} finally {
 		   closeEntityManager(em);
 		}

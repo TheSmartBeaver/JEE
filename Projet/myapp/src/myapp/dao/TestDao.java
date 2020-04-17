@@ -94,6 +94,23 @@ public class TestDao {
    }
    
    @Test
+   public void testCreationGroupePasVide(){
+	   Person p = new Person("Painbeurre", "Tartiflette", "password");
+	   p.setId(10);
+	   System.out.println("111111111 "+p);
+       daoPerson.addPerson(p);
+       Group g = new Group("Noobs");
+       g.setId(1);
+       System.out.println("222222222 "+p);
+       g.addPersonInGroup(p);
+       System.err.println("Les personnes du groupe avant insertion : "+ g.getPersonsInGroup());
+       daoGroup.saveGroup(g);
+       System.err.println("Les personnes du groupe après insertion : "+daoGroup.findGroup(g.getId()).getPersonsInGroup());
+       System.exit(1);
+
+   }
+   
+   @Test
    public void testAddInGroupAndRemoveIt() {
 	   Person p = new Person("Painbeurre", "Tartiflette", "password");
 	   p.setId(10);
@@ -102,7 +119,10 @@ public class TestDao {
        g.setId(1);
        daoGroup.saveGroup(g);
        System.out.println("Group avvec Tartiflette ?? " + daoGroup.findGroup(g.getId()));
-       //System.exit(1);
+       daoGroup.addPersonInGroup(p, g.getId());
+       
+       System.out.println("Les personnes du groupe : "+daoGroup.findGroup(g.getId()).getPersonsInGroup());
+       System.exit(1);
        
    }
    
