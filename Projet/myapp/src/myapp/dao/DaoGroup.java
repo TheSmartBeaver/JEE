@@ -105,7 +105,6 @@ if (em != null) {
 		EntityManager em = null;
 		try {
 		   em = newEntityManager();
-		   // utilisation de l'EntityManager
 		   //merge à la pace de persist pour remplacer au cas où existe ??
 		   for(Person p : g.getPersonsInGroup()) {
 			   System.err.println("J'ai ancré "+p);

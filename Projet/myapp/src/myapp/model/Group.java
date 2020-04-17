@@ -52,11 +52,11 @@ public class Group implements Serializable {
 	      nullable = false, unique = true)
 	   private String groupName;
 	   
-	   @Embedded
 	   @ElementCollection
-	   /*@OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE },
-			      fetch = FetchType.LAZY, mappedBy = "personGroup")*/
-	   private List<Person> personsInGroup = new ArrayList<Person>();
+	   @OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE },
+			      fetch = FetchType.LAZY, mappedBy = "personGroup")
+	   /*Mon OneToMany empêche persistence des personnes dans le groupe ?? why ?*/
+	   private Set<Person> personsInGroup = new HashSet<Person>();
 	   
 
 	   @Version()
@@ -116,7 +116,7 @@ public class Group implements Serializable {
 	}
 
 
-	public List<Person> getPersonsInGroup() {
+	public Set<Person> getPersonsInGroup() {
 		return personsInGroup;
 	}
 
