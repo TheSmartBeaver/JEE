@@ -10,7 +10,7 @@ import javax.persistence.TypedQuery;
 import com.tpfilrouge.beans.Client;
 
 @Stateless
-public class ClientDaoImpl {
+public class ClientDaoImpl implements ClientDao{
 
     // Injection du manager, qui s'occupe de la connexion avec la BDD
     @PersistenceContext( unitName = "tp_sdzee_PU" )

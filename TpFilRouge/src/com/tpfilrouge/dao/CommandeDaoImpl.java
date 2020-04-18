@@ -11,7 +11,7 @@ import javax.persistence.TypedQuery;
 import com.tpfilrouge.beans.Commande;
 
 @Stateless
-public class CommandeDaoImpl {
+public class CommandeDaoImpl implements CommandeDao{
 
     // Injection du manager, qui s'occupe de la connexion avec la BDD
     @PersistenceContext( unitName = "tp_sdzee_PU" )

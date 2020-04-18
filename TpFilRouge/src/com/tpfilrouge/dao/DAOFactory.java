@@ -98,10 +98,10 @@ public class DAOFactory {
     * Méthodes de récupération de l'implémentation des différents DAO
     */
    public ClientDao getClientDao() {
-      return new ClientDaoImpl(this);
+      return new ClientDaoImpl(); // J'AI ENLEVE LE THIS EN PARAM
    }
 
    public CommandeDao getCommandeDao() {
-      return new CommandeDaoImpl(this);
+      return new CommandeDaoImpl();
    }
 }
