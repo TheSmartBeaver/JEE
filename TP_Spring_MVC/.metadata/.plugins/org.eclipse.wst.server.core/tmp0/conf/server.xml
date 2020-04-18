@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/home/totor/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/home/totor/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/myapp" path="/myapp" reloadable="true" source="org.eclipse.jst.jee.server:myapp"/></Host>
+      <Context docBase="/home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/myapp" path="/myapp" reloadable="true" source="org.eclipse.jst.jee.server:myapp"/><Context docBase="/home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/springapp" path="/springapp" reloadable="true" source="org.eclipse.jst.jee.server:springapp"/><Context docBase="/home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/myTP" path="/myTP" reloadable="true" source="org.eclipse.jst.jee.server:myTP"/></Host>
     </Engine>
   </Service>
 </Server>
