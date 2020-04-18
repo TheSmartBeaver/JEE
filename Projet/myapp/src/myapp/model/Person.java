@@ -21,6 +21,8 @@ import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 import javax.persistence.Version;
 
+import myapp.model.Group;
+
 @Entity(name = "Person")
 
 @Table(name = "TPerson",
@@ -178,6 +180,7 @@ public Group getPersonGroup() {
 public void setPersonGroup(Group personGroup) {
 	this.personGroup = personGroup;
 }
+
 
 
 

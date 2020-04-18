@@ -10,8 +10,8 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 import javax.persistence.TypedQuery;
 
-import myapp.model.Group;
 import myapp.model.Person;
+import mybootapp.model.Group;
 
 public class DaoPerson implements IPersonDao {
 

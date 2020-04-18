@@ -14,8 +14,8 @@ import javax.persistence.Persistence;
 import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 
-import myapp.model.Group;
 import myapp.model.Person;
+import mybootapp.model.Group;
 import net.bytebuddy.asm.Advice.Exit;
 
 public class TestDao {

@@ -25,6 +25,8 @@ import javax.persistence.Version;
 
 import com.mysql.fabric.xmlrpc.base.Array;
 
+import myapp.model.Person;
+
 import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;

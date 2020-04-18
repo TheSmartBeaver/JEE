@@ -7,7 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+//import mybootapp.model.Group;
 import mybootapp.model.Person;
+import mybootapp.model.Party;
 
 @Controller
 @RequestMapping("/")
@@ -18,18 +20,18 @@ public class PersonControler {
 	 */
 	@Autowired
 	PersonRepository repo;
+	@Autowired
+	PartyRepository repoParty;
 
 	@PostConstruct
 	public void init() {
-		Person p = new Person("Painbeurrette");
-		//p.setId(1L);
+		Person p = new Person("Painbeurre","Painbeurrezder","Painbeurretheygtgr");
+		Party party = new Party("Pain");
+		//party.addPersonInGroup(p);
+		
+		repoParty.save(party);
 		repo.save(p);
-		p = new Person("Painbeurre");
-		//p.setId(2L);
-		repo.save(p);
-		p = new Person("Painbeurrettete");
-		//p.setId(3L);
-		repo.save(p);
+		repo.save(new Person("Painbeurrettete","Painbeurretgerrz","Painbeurretehygrg"));
 	}
 
 	@RequestMapping("/person/list")
@@ -39,15 +41,22 @@ public class PersonControler {
 
 	@RequestMapping("/person/new")
 	public String newPerson() {
-		final var person = new Person("new");
+		final var person = new Person("newrtzg","newyhtegr","newrtgz");
 		repo.save(person);
 		return "redirect:/person/list";
 	}
 
 	@RequestMapping("/person/find")
-	public ModelAndView findCourses(String firstName) {
-		final var result = repo.findByFirstName(firstName);
-		return new ModelAndView("course", "courses", result);
+	public ModelAndView findPersons(String firstName) {
+		final var result = repo.findByFirstNameLike("%" + firstName + "%");
+		return new ModelAndView("person", "persons", result);
+	}
+	
+	@RequestMapping("/party/affiche")
+	public ModelAndView affPainGroup(String partyName) {
+		final var result = repoParty.findByPartyNameLike("%" + partyName + "%");
+		System.err.println("WAAAAAAAAAAAAAAAAAAAAAAAA");
+		return new ModelAndView("party", "partys", result);
 	}
 
 }
