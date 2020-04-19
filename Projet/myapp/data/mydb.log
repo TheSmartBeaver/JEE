@@ -1,28 +1,12 @@
-/*C18*/SET SCHEMA PUBLIC
+/*C8*/SET SCHEMA PUBLIC
 \u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
 \u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)
-/*C19*/SET SCHEMA PUBLIC
+/*C9*/SET SCHEMA PUBLIC
 \u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
 \u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)
-/*C18*/INSERT INTO TPERSON VALUES(10,NULL,'Painbeurre','Tartiflette',NULL,'password',0,NULL,NULL)
+/*C8*/INSERT INTO TPERSON VALUES(10,NULL,'Painbeurre','Tartiflette',NULL,'password',0,NULL,NULL)
 COMMIT
-/*C19*/INSERT INTO TGROUP VALUES(1,'Noobs',0)
+/*C9*/INSERT INTO TGROUP VALUES(1,'Noobs',0)
 DELETE FROM TPERSON WHERE ID_PERSON=10
 INSERT INTO TPERSON VALUES(10,NULL,'Painbeurre','Tartiflette',NULL,'password',1,NULL,1)
 COMMIT
-/*C20*/SET SCHEMA PUBLIC
-\u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
-\u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)
-DELETE FROM TPERSON WHERE ID_PERSON=10
-COMMIT
-/*C21*/SET SCHEMA PUBLIC
-\u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
-\u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)
-DELETE FROM TGROUP WHERE ID=1
-COMMIT
-/*C22*/SET SCHEMA PUBLIC
-\u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
-\u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)
-/*C23*/SET SCHEMA PUBLIC
-\u000a    alter table TPerson \u000a       drop constraint UK58gbcq3p83fgxehg706edmoun
-\u000a    alter table TPerson \u000a       add constraint UK58gbcq3p83fgxehg706edmoun unique (first_name, birth_day)

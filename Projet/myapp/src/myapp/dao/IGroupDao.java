@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.List;
 
 import myapp.model.Person;
-import mybootapp.model.Group;
+import myapp.model.Group;
 
 public interface IGroupDao {
 

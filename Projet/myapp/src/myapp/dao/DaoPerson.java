@@ -11,7 +11,7 @@ import javax.persistence.PersistenceException;
 import javax.persistence.TypedQuery;
 
 import myapp.model.Person;
-import mybootapp.model.Group;
+import myapp.model.Group;
 
 public class DaoPerson implements IPersonDao {
 

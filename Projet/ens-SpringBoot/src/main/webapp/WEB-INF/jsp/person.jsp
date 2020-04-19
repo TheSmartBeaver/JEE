@@ -42,7 +42,7 @@
 	<h1>Group</h1>
 	<a href="${affPainGroup}">Aff Pain Party</a>
 	<c:forEach items="${model.partys}" var="party">
-		<p>${party.id}: <c:out value="${party.partyName}" /></p>
+		<p>${party.id}: <c:out value="${party.partyName}" /> + </p>
 	</c:forEach>
 	
 	<h1>List Persons</h1>

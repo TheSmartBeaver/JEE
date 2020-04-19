@@ -31,11 +31,12 @@ public class PersonControler {
 	public void init() {
 		Person p = new Person("Painbeurre","Painbeurrezder","Painbeurretheygtgr");
 		Party party = new Party("Pain");
-		//party.addPersonInGroup(p);
+		
+		Party par2 = new Party("Noobs");
+		par2.addPersonInParty(p);
 		
 		repoParty.save(party);
-		
-		repoParty.save(new Party("Noobs"));
+		repoParty.save(par2);
 		repo.save(p);
 		repo.save(new Person("Painbeurrettete","Painbeurretgerrz","Painbeurretehygrg"));
 	}
@@ -70,8 +71,11 @@ public class PersonControler {
 	@RequestMapping("/party/list")
 	public ModelAndView affPainGroup(String partyName) {
 		final var result = repoParty.findAll();
+		for(Party p : result) {
+			System.err.println(p.getPersonsInParty()+" PERSONS IN PARTY "+p.getPartyName());
+		}
 		System.err.println(result+"/party/list");
-		//model.put("personsResult", );
+
 		model.put("partys", result);
 		ModelAndView mAv = new ModelAndView("person", "model", model);
 		System.err.println(mAv+"/party/list");
