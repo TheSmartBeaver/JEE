@@ -1,5 +1,8 @@
 package mybootapp.dao;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +25,7 @@ public class PersonControler {
 	PersonRepository repo;
 	@Autowired
 	PartyRepository repoParty;
+	Map<String, Object> model = new HashMap<String, Object>();
 
 	@PostConstruct
 	public void init() {
@@ -30,13 +34,21 @@ public class PersonControler {
 		//party.addPersonInGroup(p);
 		
 		repoParty.save(party);
+		
+		repoParty.save(new Party("Noobs"));
 		repo.save(p);
 		repo.save(new Person("Painbeurrettete","Painbeurretgerrz","Painbeurretehygrg"));
 	}
 
 	@RequestMapping("/person/list")
 	public ModelAndView listPersons() {
-		return new ModelAndView("person", "persons", repo.findAll());
+		final var result = repo.findAll();
+		System.err.println(result+"/person/list");
+		//model.put("personsResult", );
+		model.put("persons", result);
+		ModelAndView mAv = new ModelAndView("person", "model", model);
+		System.err.println(mAv+"/person/list");
+		return mAv;
 	}
 
 	@RequestMapping("/person/new")
@@ -49,14 +61,21 @@ public class PersonControler {
 	@RequestMapping("/person/find")
 	public ModelAndView findPersons(String firstName) {
 		final var result = repo.findByFirstNameLike("%" + firstName + "%");
-		return new ModelAndView("person", "persons", result);
+		System.err.println(result+" /person/find");
+		ModelAndView mAv = new ModelAndView("person", "persons", result);
+		System.err.println(mAv+" /person/find");
+		return mAv;
 	}
 	
-	@RequestMapping("/party/affiche")
+	@RequestMapping("/party/list")
 	public ModelAndView affPainGroup(String partyName) {
-		final var result = repoParty.findByPartyNameLike("%" + partyName + "%");
-		System.err.println("WAAAAAAAAAAAAAAAAAAAAAAAA");
-		return new ModelAndView("party", "partys", result);
+		final var result = repoParty.findAll();
+		System.err.println(result+"/party/list");
+		//model.put("personsResult", );
+		model.put("partys", result);
+		ModelAndView mAv = new ModelAndView("person", "model", model);
+		System.err.println(mAv+"/party/list");
+		return mAv;
 	}
 
 }

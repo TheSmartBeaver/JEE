@@ -59,7 +59,7 @@ import mybootapp.model.Person;
 			return id;
 		}
 
-		public String getFirstName() {
+		public String getPartyName() {
 			return partyName;
 		}
 
