@@ -28,7 +28,7 @@ import mybootapp.model.Party;
 @Table(name = "TPerson",
    uniqueConstraints = {
       @UniqueConstraint(columnNames = {
-         "first_name", "birth_day"
+         "first_name", "last_name"
       })
    })
 public class Person implements Serializable {
@@ -41,31 +41,31 @@ public class Person implements Serializable {
 
    @Basic(optional = false)
    @Column(name = "first_name", length = 200,
-      nullable = false, unique = true)
+      nullable = false, unique = false)
    private String firstName;
    
    @Basic(optional = false)
    @Column(name = "last_name", length = 200,
-      nullable = false, unique = true)
+      nullable = false, unique = false)
    private String lastName;
    
    @Basic(optional = true)
    @Column(name = "mail", length = 200, 
-   		unique = true)
+   		unique = false)
    private String mail;
    
    @Basic(optional = true)
    @Column(name = "site_web", length = 200, 
-   		unique = true)
+   		unique = false)
    private String website;
    
    //TODO: Trouver moyen sécuriser de stocker MDP ??
    @Basic(optional = false)
    @Column(name = "password", length = 200,
-      nullable = false, unique = true)
+      nullable = false, unique = false)
    private String password;
 
-@Basic()
+   @Basic(optional = true)
    @Temporal(TemporalType.DATE)
    @Column(name = "birth_day")
    private Date birthDay;
@@ -94,7 +94,7 @@ public class Person implements Serializable {
    @Override
    public String toString() {
       return "Person(id=" + getId() + "," + firstName + "," + birthDay + ","
-            + ",v" + getVersion() + ")";
+            + ",lastName : " + getLastName() + " password :"+ password +")";
    }
 
    public long getId() {

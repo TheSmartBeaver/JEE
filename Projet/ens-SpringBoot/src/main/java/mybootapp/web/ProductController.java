@@ -1,4 +1,4 @@
-package springapp.web;
+package mybootapp.web;
 
 import java.util.Collection;
 import java.util.LinkedHashMap;
@@ -18,12 +18,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.validation.Valid;
-import springapp.business.IProductManager;
-import springapp.model.Product;
-import springapp.model.ProductCode;
+import mybootapp.business.IProductManager;
+import mybootapp.model.Product;
+import mybootapp.model.ProductCode;
 
 @Controller()
-@RequestMapping("/product")
+@RequestMapping("/")
 public class ProductController {
 
     @Autowired
@@ -31,16 +31,7 @@ public class ProductController {
 
     protected final Log logger = LogFactory.getLog(getClass());
     
-    @ModelAttribute("productTypes")
-    public Map<String, String> productTypes() {
-        Map<String, String> types = new LinkedHashMap<>();
-        types.put("type1", "Type 1");
-        types.put("type2", "Type 2");
-        types.put("type3", "Type 3");
-        types.put("type4", "Type 4");
-        types.put("type5", "Type 5");
-        return types;
-    }
+    
 
     @ModelAttribute("products")
     Collection<Product> products() {
@@ -64,16 +55,16 @@ public class ProductController {
         return p;
     }
     
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/product/list", method = RequestMethod.GET)
     public String listProducts() {
         logger.info("List of products");
         return "productsList";
     }
     
     @Autowired
-    ProductValidator validator;
+    ValidatorProduct validator;
 
-    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    @RequestMapping(value = "/product/edit", method = RequestMethod.POST)
     public String saveProduct(@ModelAttribute @Valid Product p, BindingResult result) {
     	System.err.println("SAVE PRODUCT");
         validator.validate(p, result);
@@ -86,6 +77,6 @@ public class ProductController {
     
     @InitBinder
     public void initBinder(WebDataBinder b) {
-        b.registerCustomEditor(ProductCode.class, new ProductCodeEditor());
+        b.registerCustomEditor(ProductCode.class, new EditorProductCode());
     }
 }

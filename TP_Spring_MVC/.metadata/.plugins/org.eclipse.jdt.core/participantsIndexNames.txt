@@ -7,6 +7,8 @@ INDEX VERSION 1.131
 /app2/src
 /home/totor/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2282042086.index
 /myapp/src
+/home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2816032291.index
+/ens-SpringBoot/src/main/java
 /home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1971389725.index
 /springapp/src
 /home/totor/Documents/M1/JEE/TP_D/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3711685318.index

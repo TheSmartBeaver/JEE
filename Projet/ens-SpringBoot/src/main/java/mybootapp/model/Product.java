@@ -1,10 +1,10 @@
-package springapp.model;
+package mybootapp.model;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import springapp.web.Bye;
+//import springapp.web.Bye;
 
 public class Product {
 
@@ -20,7 +20,7 @@ public class Product {
 
     @NotNull(message = "La description est obligatoireeeeeeeeeeeeeeeee")
     @Size(min = 1, max = 100, message = "Entre 1 et 200 caractèressssssssssssssssss")
-    @Bye
+    //@Bye
     private String description;
 
     @NotNull()

@@ -46,6 +46,7 @@ public class SpringStart implements WebApplicationInitializer, WebMvcConfigurer 
     
     @Bean
     public ViewResolver viewResolver() {
+    	System.err.println("view Resolver de SpringStart");
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
         viewResolver.setPrefix("/WEB-INF/jsp/");
