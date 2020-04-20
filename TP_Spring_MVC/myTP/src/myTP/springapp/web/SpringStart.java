@@ -8,10 +8,16 @@ import javax.servlet.ServletRegistration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
+
+import myTP.springapp.business.SpringBusinessConfig;
 
 /**
  * La méthode onStartup est automatiquement appelée par Spring pour initialiser l'application.
@@ -24,6 +30,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackageClasses = SpringStart.class)
+@Import(SpringBusinessConfig.class)
 public class SpringStart implements WebApplicationInitializer {
 
     @Override
@@ -40,6 +47,16 @@ public class SpringStart implements WebApplicationInitializer {
         servlet.setLoadOnStartup(1);
         servlet.addMapping("*.htm");
         servlet.addMapping("/actions/*");
+    }
+    
+    /*Va résoudre les noms des vues*/
+    @Bean
+    public ViewResolver viewResolver() {
+        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+        viewResolver.setViewClass(JstlView.class);
+        viewResolver.setPrefix("/WEB-INF/jsp/");
+        viewResolver.setSuffix(".jsp");
+        return viewResolver;
     }
 
 }

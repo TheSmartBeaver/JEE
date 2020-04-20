@@ -11,8 +11,11 @@ public class ByeConstraintValidator implements ConstraintValidator<Bye, String> 
 
     @Override
     public boolean isValid(String arg0, ConstraintValidatorContext arg1) {
-        if (arg0.contains("bye"))
+        if (arg0.contains("bye")) {
+        	System.err.println("YEEEEEESSSSSSSSSSS");
             return true;
+            }
+        System.err.println("WHHHHHHHHHHHHHHHHHHHHHHAAAT");
         return false;
     }
 }

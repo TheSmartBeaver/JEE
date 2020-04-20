@@ -30,6 +30,17 @@ public class ProductController {
     IProductManager manager;
 
     protected final Log logger = LogFactory.getLog(getClass());
+    
+    @ModelAttribute("productTypes")
+    public Map<String, String> productTypes() {
+        Map<String, String> types = new LinkedHashMap<>();
+        types.put("type1", "Type 1");
+        types.put("type2", "Type 2");
+        types.put("type3", "Type 3");
+        types.put("type4", "Type 4");
+        types.put("type5", "Type 5");
+        return types;
+    }
 
     @ModelAttribute("products")
     Collection<Product> products() {

@@ -46,11 +46,11 @@
         			element="div" />
 			</div>
 			<div class="form-group">
-    			<label for="code">Code:</label>
-    			<form:input path="code" class="form-control" />
-    			<form:errors path="code" cssClass="alert alert-warning"
-        			element="div" />
-			</div>
+    <label for="code">Code:</label>
+    <form:input path="code" class="form-control" />
+    <form:errors path="code" cssClass="alert alert-warning"
+        element="div" />
+</div>
             <div class="form-group">
                 <button type="submit" class="btn btn-info">Submit</button>
             </div>

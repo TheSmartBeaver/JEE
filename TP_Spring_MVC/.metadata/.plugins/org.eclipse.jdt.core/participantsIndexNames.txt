@@ -17,5 +17,7 @@ INDEX VERSION 1.131
 /my_MVC-TP/src
 /home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/481130581.index
 /myTP/src
+/home/totor/Documents/M1/JEE/TP_Spring_MVC/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2255366341.index
+/myTP/src
 /home/totor/Documents/M1/JEE/TP_D/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1084292357.index
 /app2/src

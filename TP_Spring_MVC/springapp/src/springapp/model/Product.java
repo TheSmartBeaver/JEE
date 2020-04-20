@@ -18,7 +18,7 @@ public class Product {
     @Min(value = 1, message = "Le prix est trop bas")
     private Double price;
 
-    @NotNull(message = "La description est obligatoire")
+    @NotNull(message = "La description est obligatoireeeeeeeeeeeeeeeee")
     @Size(min = 1, max = 100, message = "Entre 1 et 200 caractères")
     @Bye
     private String description;

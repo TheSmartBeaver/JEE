@@ -684,3 +684,354 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whites
 2020-04-18 13:53:58,293 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
 2020-04-18 13:53:58,295 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-04-18 13:53:58,296 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:08:10,269 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-04-19 14:08:29,670 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:7.0.0.Alpha1 has been relocated to org.hibernate.validator:hibernate-validator:jar:7.0.0.Alpha1
+2020-04-19 14:08:31,901 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:08:31,903 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:08:31,907 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:08:31,907 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:08:35,510 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:7.0.0.Alpha1 has been relocated to org.hibernate.validator:hibernate-validator:jar:7.0.0.Alpha1
+2020-04-19 14:08:35,523 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:08:35,524 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 14:08:35,526 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:08:35,527 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 14:12:47,878 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:12:47,879 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:12:47,881 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:12:47,882 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:16:14,429 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:16:14,503 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:16:14,505 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:16:14,505 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:16:55,050 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:16:55,050 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 14:16:55,052 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:16:55,052 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 14:21:22,221 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:21:22,230 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 14:21:22,232 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:21:22,233 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 14:21:37,716 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:21:37,717 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:21:37,719 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:21:37,719 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:23:48,945 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:23:48,945 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:23:48,949 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:23:48,949 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:24:05,810 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:24:05,810 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:24:05,812 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:24:05,820 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:26:43,797 [Worker-34: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:26:43,798 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:26:43,800 [Worker-34: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:26:43,800 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:27:39,592 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:27:39,592 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:27:39,596 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:27:39,596 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:29:15,566 [Worker-34: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:29:15,567 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:29:15,569 [Worker-34: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:29:15,570 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:29:46,897 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:29:46,898 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:29:46,904 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:29:46,906 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:33:47,661 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:33:47,662 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:33:47,663 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:33:47,664 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:41:52,401 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:41:52,402 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:41:52,404 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:41:52,405 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 14:44:52,774 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:44:52,775 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 14:44:52,791 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 14:44:52,792 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:28:20,367 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:28:20,368 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:28:20,369 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:28:20,370 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:36:19,421 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:36:19,422 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:36:19,424 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:36:19,424 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:36:54,020 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:36:54,021 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:36:54,022 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:36:54,023 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:37:06,393 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:37:06,393 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:37:06,395 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:37:06,395 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:38:23,925 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:38:23,927 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:38:23,929 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:38:23,930 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:38:28,916 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:38:28,917 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:38:28,918 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:38:28,919 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:39:06,288 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:06,289 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:39:06,290 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:06,291 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:39:10,495 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:10,497 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:39:10,500 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:10,501 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:39:32,127 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:32,128 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:39:32,129 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:32,136 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:39:53,186 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:53,186 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:39:53,188 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:39:53,188 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:41:25,065 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:41:25,066 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:41:25,067 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:41:25,068 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:48:15,519 [Worker-65: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:48:15,520 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 15:48:15,521 [Worker-65: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:48:15,522 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 15:48:35,620 [Worker-62: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:48:35,621 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 15:48:35,623 [Worker-62: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:48:35,623 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 15:50:20,276 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:50:20,277 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 15:50:20,278 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:50:20,279 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 15:50:37,184 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:50:37,185 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:50:37,186 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:50:37,187 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 15:59:35,645 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:59:35,646 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 15:59:35,649 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 15:59:35,650 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:11:44,066 [Worker-78: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:11:44,073 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:11:44,074 [Worker-78: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:11:44,074 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:12:49,744 [Worker-78: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:12:49,744 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:12:49,745 [Worker-78: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:12:49,746 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:13:29,769 [Worker-78: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:13:29,774 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:13:29,777 [Worker-78: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:13:29,778 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:13:38,192 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:13:38,192 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:13:38,194 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:13:38,195 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:13:48,106 [Worker-79: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:13:48,107 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:13:48,108 [Worker-79: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:13:48,109 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:14:57,804 [Worker-73: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:14:57,805 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:14:57,806 [Worker-73: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:14:57,807 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:15:08,076 [Worker-79: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:15:08,077 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:15:08,078 [Worker-79: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:15:08,078 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:15:12,807 [Worker-73: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:15:12,808 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:15:12,810 [Worker-73: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:15:12,810 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:16:16,215 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:16:16,216 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:16:16,217 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:16:16,218 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:16:28,251 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:16:28,252 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:16:28,253 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:16:28,253 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:18:18,616 [Worker-79: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:18:18,617 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:18:18,618 [Worker-79: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:18:18,618 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:18:37,476 [Worker-80: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:18:37,477 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:18:37,478 [Worker-80: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:18:37,479 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:21:09,473 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:21:09,473 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:21:09,480 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:21:09,481 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:21:37,349 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:21:37,350 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:21:37,350 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:21:37,351 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:22:14,497 [Worker-82: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:22:14,498 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:22:14,499 [Worker-82: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:22:14,500 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:22:24,101 [Worker-84: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:22:24,101 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:22:24,103 [Worker-84: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:22:24,104 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:28:09,413 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:28:09,413 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:28:09,415 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:28:09,418 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:28:30,995 [Worker-87: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:28:30,995 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:28:30,997 [Worker-87: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:28:30,997 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:31:49,263 [Worker-85: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:31:49,264 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:31:49,272 [Worker-85: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:31:49,273 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:31:56,458 [Worker-90: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:31:56,458 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:31:56,459 [Worker-90: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:31:56,460 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:32:25,364 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:32:25,364 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:32:25,365 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:32:25,366 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:33:40,058 [Worker-90: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:33:40,058 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:33:40,059 [Worker-90: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:33:40,060 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:38:35,315 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:38:35,316 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:38:35,317 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:38:35,318 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:39:05,489 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:39:05,490 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:39:05,492 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:39:05,493 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:39:08,796 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:39:08,797 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:39:08,798 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:39:08,799 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:40:14,714 [Worker-85: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:14,714 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:40:14,716 [Worker-85: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:14,716 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:40:19,052 [Worker-94: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:19,053 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:40:19,054 [Worker-94: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:19,055 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:40:45,213 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:45,213 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:40:45,214 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:45,215 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:40:59,262 [Worker-92: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:59,272 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:40:59,273 [Worker-92: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:40:59,274 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:41:07,189 [Worker-92: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:41:07,190 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:41:07,191 [Worker-92: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:41:07,192 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:41:43,595 [Worker-97: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:41:43,596 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:41:43,597 [Worker-97: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:41:43,598 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:43:10,977 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:43:10,978 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:43:10,980 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:43:10,980 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:49:45,806 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:49:45,806 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:49:45,807 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:49:45,808 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:50:11,215 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:50:11,216 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:50:11,218 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:50:11,219 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:51:13,381 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:51:13,382 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:51:13,383 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:51:13,383 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:51:42,695 [Worker-100: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:51:42,697 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:51:42,698 [Worker-100: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:51:42,699 [Worker-100: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:51:55,286 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:51:55,287 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:51:55,288 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:51:55,288 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:52:27,179 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:52:27,179 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:52:27,180 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:52:27,181 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:52:49,341 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:52:49,342 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:52:49,343 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:52:49,343 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:53:00,134 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:53:00,134 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:53:00,136 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:53:00,136 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:54:01,496 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:54:01,496 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:54:01,498 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:54:01,498 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:54:06,826 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:54:06,827 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:54:06,828 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:54:06,830 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:55:13,063 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:55:13,064 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:55:13,065 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:55:13,066 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:55:22,155 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:55:22,156 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:55:22,157 [Worker-93: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:55:22,158 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:56:49,120 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:56:49,121 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:56:49,123 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:56:49,124 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 16:56:54,010 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:56:54,011 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/main/resources
+2020-04-19 16:56:54,012 [Worker-98: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 16:56:54,013 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/myTP/src/test/resources
+2020-04-19 21:29:35,148 [Worker-113: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:29:35,149 [Worker-113: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 21:29:35,150 [Worker-113: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:29:35,150 [Worker-113: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 21:34:53,577 [Worker-110: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:34:53,578 [Worker-110: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 21:34:53,613 [Worker-110: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:34:53,614 [Worker-110: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 21:40:04,547 [Worker-122: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:40:04,547 [Worker-122: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 21:40:04,549 [Worker-122: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:40:04,549 [Worker-122: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 21:41:45,662 [Worker-106: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:41:45,663 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 21:41:45,664 [Worker-106: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:41:45,665 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 21:43:40,274 [Worker-124: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:43:40,275 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 21:43:40,276 [Worker-124: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 21:43:40,277 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 22:26:44,376 [Worker-138: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:26:44,422 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 22:26:44,424 [Worker-138: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:26:44,425 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 22:29:00,214 [Worker-132: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:29:00,215 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 22:29:00,216 [Worker-132: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:29:00,217 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 22:39:35,697 [Worker-148: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:39:35,698 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 22:39:35,699 [Worker-148: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:39:35,700 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
+2020-04-19 22:43:52,274 [Worker-153: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:43:52,276 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/main/resources
+2020-04-19 22:43:52,277 [Worker-153: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-04-19 22:43:52,277 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/totor/Documents/M1/JEE/TP_Spring_MVC/springapp/src/test/resources
