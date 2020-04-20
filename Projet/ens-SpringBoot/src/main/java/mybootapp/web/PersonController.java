@@ -75,6 +75,7 @@ public class PersonController {
             @RequestParam(value = "id", required = false) Long personId) {
         if (personId != null) {
             logger.info("find person " + personId);
+            System.err.println("Il y'a une personne dont le nom est à éditer");
             return repo.findById(personId).get();
         }
         Person p = new Person("","","");
@@ -117,6 +118,17 @@ public class PersonController {
         System.err.println("REFAIT la liste des personnes");
         return repo.findAll();
     }
+    
+    @RequestMapping(value = "/person/edit", method = RequestMethod.GET)
+	public ModelAndView editPerson(@ModelAttribute @Valid Person p, @RequestParam(value = "id", defaultValue = "-1") Long value) {
+		if(value == -1) //return "personForm";
+			return new ModelAndView("personForm");
+		else {
+			//Person p2 = repo.findById(value).get();
+			//return new ModelAndView("personForm").addObject("firstname",p2.getFirstName());
+			return new ModelAndView("personForm");
+		}
+	}
     
     /*@InitBinder
     public void initBinder(WebDataBinder b) {

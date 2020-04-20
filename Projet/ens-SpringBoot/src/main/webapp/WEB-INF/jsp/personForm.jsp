@@ -20,7 +20,7 @@
 
             <div class="form-group">
                 <label for="firstName">firstName:</label>
-                <form:input class="form-control" path="firstName" />
+                <form:input class="form-control" path="firstName" value="${firstname}"/>
                 <form:errors path="firstName" cssClass="alert alert-warning"
                     element="div" />
             </div>
