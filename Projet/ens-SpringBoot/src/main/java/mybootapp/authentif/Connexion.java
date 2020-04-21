@@ -14,7 +14,6 @@ import mybootapp.authentif.Utilisateur;
 import mybootapp.authentif.ConnexionForm;
 
 @WebServlet("/login")
-
 public class Connexion extends HttpServlet {
     public static final String ATT_USER         = "utilisateur";
     public static final String ATT_FORM         = "form";
