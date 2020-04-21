@@ -13,7 +13,7 @@ public class UserController {
 
     protected final Log logger = LogFactory.getLog(getClass());
 
-    @Autowired()
+    /*@Autowired()
     User user;
 
     @ModelAttribute("user")
@@ -39,5 +39,5 @@ public class UserController {
         logger.info("logout user " + user);
         user.setName("Anonymous");
         return "user";
-    }
+    }*/
 }
