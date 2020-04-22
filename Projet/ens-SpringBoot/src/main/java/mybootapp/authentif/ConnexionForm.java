@@ -2,15 +2,22 @@ package mybootapp.authentif;
 
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import mybootapp.authentif.Utilisateur;
+import mybootapp.dao.DAOPerson;
+import mybootapp.dao.PersonRepository;
+import mybootapp.model.Person;
 
 public final class ConnexionForm {
     private static final String CHAMP_EMAIL  = "email";
     private static final String CHAMP_PASS   = "motdepasse";
+    
 
     private String              resultat;
     private Map<String, String> erreurs      = new HashMap<String, String>();
@@ -32,6 +39,7 @@ public final class ConnexionForm {
 
         /* Validation du champ email. */
         try {
+        	System.err.println("CHECK email");
             validationEmail( email );
         } catch ( Exception e ) {
             setErreur( CHAMP_EMAIL, e.getMessage() );
@@ -40,7 +48,7 @@ public final class ConnexionForm {
 
         /* Validation du champ mot de passe. */
         try {
-            validationMotDePasse( motDePasse );
+            validationMotDePasse(email ,motDePasse );
         } catch ( Exception e ) {
             setErreur( CHAMP_PASS, e.getMessage() );
         }
@@ -63,16 +71,25 @@ public final class ConnexionForm {
         if ( email != null && !email.matches( "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)" ) ) {
             throw new Exception( "Merci de saisir une adresse mail valide." );
         }
+        System.err.println("ooh");
+        System.err.println("aoh");
+        /*if(pList.size()!=1) {
+        	throw new Exception("Pas d'utilisateur trouvé pour cet email");
+        }*/
+        
+        //System.err.println("Trouvé : "+dao.findAllPersons().toString());
     }
 
     /**
      * Valide le mot de passe saisi.
      */
-    private void validationMotDePasse( String motDePasse ) throws Exception {
+    private void validationMotDePasse(String email, String motDePasse ) throws Exception {
         if ( motDePasse != null ) {
             if ( motDePasse.length() < 3 ) {
                 throw new Exception( "Le mot de passe doit contenir au moins 3 caractères." );
             }
+            
+            
         } else {
             throw new Exception( "Merci de saisir votre mot de passe." );
         }

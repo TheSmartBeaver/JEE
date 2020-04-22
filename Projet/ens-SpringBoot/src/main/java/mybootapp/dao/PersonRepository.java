@@ -9,5 +9,7 @@ public interface PersonRepository extends CrudRepository<Person, Long> {
 
 	List<Person> findByFirstName(String firstName);
 	List<Person> findByFirstNameLike(String firstName);
+	List<Person> findByMail(String mail);
+	List<Person> findByMailLike(String mail);
 
 }

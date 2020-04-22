@@ -22,6 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.validation.Valid;
 import mybootapp.business.IPersonManager;
+import mybootapp.dao.DAOPerson;
 import mybootapp.dao.PartyRepository;
 import mybootapp.dao.PersonRepository;
 import mybootapp.model.Party;
@@ -31,30 +32,47 @@ import mybootapp.model.Person;
 @RequestMapping("/")
 public class PersonController {
 
+	/*DAOPerson dao = new DAOPerson();
+	PersonRepository repo = dao.getPersonRepository();
+	PartyRepository repoParty = dao.getPartyRepository();
+	Map<String, Object> model = new HashMap<String, Object>();*/
+	
 	@Autowired
-	PersonRepository repo;
+	public DAOPerson dao;
+	
 	@Autowired
-	PartyRepository repoParty;
-	Map<String, Object> model = new HashMap<String, Object>();
-
+	public DAOPerson dao2;
+	
+	public DAOPerson getDAO() {
+		return dao;
+	}
+	
 	@PostConstruct
 	public void init() {
-		Person p = new Person("Painbeurre","Painbeurrezder","Painbeurretheygtgr");
+		Person p = new Person("Painbeurre","Painbeurrezder","aaa@gmail.com","pswaaa");
 		System.err.println("Id de p1 :" + p.getId());
 		Party party = new Party("Pain");
 		
 		Party par2 = new Party("Noobs");
 		par2.addPersonInParty(p);
 		
-		repoParty.save(party);
+		/*repoParty.save(party);
 		repoParty.save(par2);
-		repo.save(p);
+		repo.save(p);*/
 		
-		Person p2 = new Person("Painbeurrettete","Painbeurretgerrz","Painbeurretehygrg");
+		dao.saveParty(party);
+		dao.saveParty(par2);
+		dao.savePerson(p);
+		dao2.savePerson(new Person("gg","oo","bbb@gmail.com","pswbbb"));
+		
+		Person p2 = new Person("Painbeurrettete","Painbeurretgerrz","ccc@gmail.com","pswccc");
 		System.err.println("Id de p2 :" + p2.getId());
-		repo.save(p2);
+		//repo.save(p2);
+		dao.savePerson(p2);
 		
-		System.err.println(repo.findAll().toString());
+		//System.err.println(repo.findAll().toString());
+		System.err.println(dao.findAllParties().toString());
+		System.err.println(dao2.findAllPersons().toString());
 	}
 
     protected final Log logger = LogFactory.getLog(getClass());
@@ -76,9 +94,9 @@ public class PersonController {
         if (personId != null) {
             logger.info("find person " + personId);
             System.err.println("Il y'a une personne dont le nom est à éditer");
-            return repo.findById(personId).get();
+            return dao.findById(personId);
         }
-        Person p = new Person("","","");
+        Person p = new Person("","","","");
         //p.setId(newId++);
         p.setBirthDay(null);
         p.setMail("");
@@ -105,9 +123,9 @@ public class PersonController {
             return "personForm";
         }
         System.err.println("AVANT SAVE NOUVELLE PERSON");
-        repo.save(p);
+        dao.savePerson(p);
         System.err.println("APRES SAVE NOUVELLE PERSON");
-        System.err.println(repo.findAll().toString());
+        System.err.println(dao.findAllPersons().toString());
         return "redirect:/person/list";
     }
     
@@ -116,7 +134,7 @@ public class PersonController {
     Iterable<Person> persons() {
         logger.info("Making list of persons");
         System.err.println("REFAIT la liste des personnes");
-        return repo.findAll();
+        return dao.findAllPersons();
     }
     
     @RequestMapping(value = "/person/edit", method = RequestMethod.GET)

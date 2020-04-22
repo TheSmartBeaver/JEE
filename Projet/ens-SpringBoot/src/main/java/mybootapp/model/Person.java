@@ -84,17 +84,18 @@ public class Person implements Serializable {
       super();
    }
 
-   public Person(String firstName, String lastName, String password) {
+   public Person(String firstName, String lastName, String email, String password) {
       super();
       this.firstName = firstName;
       this.lastName = lastName;
+      this.mail = email;
       this.password = password;
    }
 
    @Override
    public String toString() {
-      return "Person(id=" + getId() + "," + firstName + "," + birthDay + ","
-            + ",lastName : " + getLastName() + " password :"+ password +")";
+      return "Person(id=" + getId() + "," + firstName
+            + ",lastName : " + getLastName() +", email "+ mail + " password :"+ password +")";
    }
 
    public long getId() {

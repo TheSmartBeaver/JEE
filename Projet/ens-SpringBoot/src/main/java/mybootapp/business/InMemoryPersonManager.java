@@ -18,13 +18,13 @@ public class InMemoryPersonManager implements IPersonManager {
 
     public InMemoryPersonManager() {
         this.persons = new HashMap<Long, Person>();
-        Person p1 = new Person("","","");
+        Person p1 = new Person("","","","");
         //p1.setId(newId++);
         p1.setBirthDay(null);
         p1.setMail("");
         p1.setPersonParty(null);
         p1.setWebsite("");
-        Person p2 = new Person("","","");
+        Person p2 = new Person("","","","");
         //p1.setId(newId++);
         p2.setBirthDay(null);
         p2.setMail("");
