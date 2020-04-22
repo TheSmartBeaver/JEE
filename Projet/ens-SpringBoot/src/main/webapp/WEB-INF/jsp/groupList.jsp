@@ -3,6 +3,7 @@
 <%@ include file="/WEB-INF/jsp/include.jsp"%>
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<c:url var="edit" value="/personsGroup/list" />
 
 <html>
 <head>
@@ -14,12 +15,10 @@
 	<div class="container">
         <h1>Products (bootstrap)</h1>
         <table class="table table-hover">
-            <c:forEach items="${products}" var="prod">
+            <c:forEach items="${availableGroups}" var="group">
                 <tr>
-                    <td><a href="${edit}?id=${prod.number}">
-                        <c:out value="${prod.name}" />
-                    </a></td>
-                    <td><i>$<c:out value="${prod.price}" /></i></td>
+                    <td> <c:out value="${group.id}" /></td>
+                    <td><i><a href="${edit}?id=${group.id}">$<c:out value="${group.partyName}" /></a></i></td>
                 </tr>
             </c:forEach>
         </table>
@@ -57,7 +56,7 @@
     			<label for="type">Type:</label>
     			<form:select path="type" multiple="false" class="form-control">
         			<form:option value="" label="--- Select ---" />
-        			<form:options items="${productTypes}" />
+        			<form:options items="${availableGroups}" />
     			</form:select>
     			<form:errors path="type" cssClass="alert alert-warning"
         			element="div" />

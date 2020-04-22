@@ -9,6 +9,7 @@ public interface IPersonDao {
 	public void saveParty(Party p);
 	public Iterable<Party> findAllParties();
 	public Iterable<Person> findAllPersons();
+	public Iterable<Person> findAllPersonsinParty(Long partyId);
 	public Person findByEmail(String email);
 	Person findById(Long id);
 

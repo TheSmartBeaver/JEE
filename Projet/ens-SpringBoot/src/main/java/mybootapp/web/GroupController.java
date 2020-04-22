@@ -19,6 +19,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.validation.Valid;
 import mybootapp.business.IProductManager;
+import mybootapp.dao.DAOPerson;
+import mybootapp.model.Party;
 import mybootapp.model.Product;
 import mybootapp.model.ProductCode;
 
@@ -27,16 +29,16 @@ import mybootapp.model.ProductCode;
 public class GroupController {
 
     @Autowired
-    IProductManager manager;
+    DAOPerson dao;
 
     protected final Log logger = LogFactory.getLog(getClass());
     
     
 
-    @ModelAttribute("products")
-    Collection<Product> products() {
+    @ModelAttribute("availableGroups")
+    Iterable<Party> availableGroups() {
         logger.info("Making list of products");
-        return manager.findAll();
+        return dao.findAllParties();
     }
     
     @ModelAttribute
@@ -44,7 +46,8 @@ public class GroupController {
             @RequestParam(value = "id", required = false) Integer productNumber) {
         if (productNumber != null) {
             logger.info("find product " + productNumber);
-            return manager.find(productNumber);
+            return null;
+            //return manager.find(productNumber);
         }
         Product p = new Product();
         p.setNumber(null);
@@ -64,14 +67,15 @@ public class GroupController {
     @Autowired
     ValidatorProduct validator;
 
-    @RequestMapping(value = "/group/edit", method = RequestMethod.POST)
+    @RequestMapping(value = "/group/list", method = RequestMethod.POST)
     public String saveProduct(@ModelAttribute @Valid Product p, BindingResult result) {
     	System.err.println("SAVE PRODUCT");
-        validator.validate(p, result);
+    	System.err.println(p.getType());
+        //validator.validate(p, result);
         if (result.hasErrors()) {
-            return "productForm";
+            return "groupList";
         }
-        manager.save(p);
+        //manager.save(p);
         return "groupList";
     }
     
