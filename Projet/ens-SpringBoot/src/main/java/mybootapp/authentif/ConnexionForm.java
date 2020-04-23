@@ -20,7 +20,11 @@ public final class ConnexionForm {
     
 
     private String              resultat;
-    private Map<String, String> erreurs      = new HashMap<String, String>();
+    public void setResultat(String resultat) {
+		this.resultat = resultat;
+	}
+
+	private Map<String, String> erreurs      = new HashMap<String, String>();
 
     public String getResultat() {
         return resultat;
@@ -98,7 +102,7 @@ public final class ConnexionForm {
     /*
      * Ajoute un message correspondant au champ spécifié à la map des erreurs.
      */
-    private void setErreur( String champ, String message ) {
+    public void setErreur( String champ, String message ) {
         erreurs.put( champ, message );
     }
 

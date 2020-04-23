@@ -11,7 +11,7 @@
 <body>
 	<div class="container">
 		<h1>
-			Persons in Group sans les détails :
+			Persons in Group avec les détails :
 			<c:out value="${selectedGroup}" />
 		</h1>
 		<table class="table table-hover">
@@ -19,6 +19,8 @@
 				<td><i>Nom</i></td>
 				<td><i>Prénom</i></td>
 				<td><i>Site Web</i></td>
+				<td><i>Date Naissance</i></td>
+				<td><i>Mail</i></td>
 			</tr>
 			<c:forEach items="${personsInGroup}" var="pers">
 				<tr>
@@ -27,6 +29,8 @@
 					</a></td>
 					<td><i>$<c:out value="${pers.lastName}" /></i></td>
 					<td><i>$<c:out value="${pers.website}" /></i></td>
+					<td><i>$<c:out value="${pers.birthDay}" /></i></td>
+					<td><i>$<c:out value="${pers.mail}" /></i></td>
 				</tr>
 			</c:forEach>
 		</table>

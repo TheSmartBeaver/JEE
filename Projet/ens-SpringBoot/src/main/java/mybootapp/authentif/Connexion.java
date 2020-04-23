@@ -48,30 +48,36 @@ public class Connexion extends HttpServlet {
          * Utilisateur à la session, sinon suppression du bean de la session.
          */
         if ( form.getErreurs().isEmpty() ) {
-        	if(!authentification(utilisateur)) {
+        	if(!authentification(utilisateur, form)) {
             	System.err.println("mot de passe incorrect");
-            	
+            	form.setResultat("Authentification échouée");
+            	request.setAttribute( ATT_FORM, form );
+            	this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+            	return;
             }
         	/* Récupération de la session depuis la requête */
             HttpSession session = request.getSession();
             session.setAttribute( ATT_SESSION_USER, utilisateur );
             
+            /* Stockage du formulaire et du bean dans l'objet request */
+            request.setAttribute( ATT_FORM, form );
+            request.setAttribute( ATT_USER, utilisateur );
+
+            this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+            
         } else {
             //session.setAttribute( ATT_SESSION_USER, null );
+        	this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
         }
-
-        /* Stockage du formulaire et du bean dans l'objet request */
-        request.setAttribute( ATT_FORM, form );
-        request.setAttribute( ATT_USER, utilisateur );
-
-        this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
     
-    public boolean authentification(Utilisateur user) {
+    public boolean authentification(Utilisateur user, ConnexionForm form) {
     	dao.findAllPersons();
     	System.err.println("On cherche utilisateur avec cet email : "+user.getEmail());
     	if(dao.findByEmail(user.getEmail())==null) {
+    		form.setErreur("email", "Mail inexistant");
     		System.err.println("Mail inexistant");
+    		
     	return false;
     	}
     	
@@ -79,7 +85,9 @@ public class Connexion extends HttpServlet {
     	if(dao.findByEmail(user.getEmail()).getPassword().equals(user.getMotDePasse())) {
     		return true;
     	}
-    	else
+    	else {
+    		form.setErreur("motdepasse", "mot de passe incorrect");
     		return false;
+    	}
     }
 }
