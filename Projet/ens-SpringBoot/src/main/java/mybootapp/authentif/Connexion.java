@@ -58,6 +58,7 @@ public class Connexion extends HttpServlet {
         	/* Récupération de la session depuis la requête */
             HttpSession session = request.getSession();
             session.setAttribute( ATT_SESSION_USER, utilisateur );
+            System.err.println("ATTRIBUTE :: "+session.getAttribute(ATT_SESSION_USER));
             
             /* Stockage du formulaire et du bean dans l'objet request */
             request.setAttribute( ATT_FORM, form );
@@ -83,6 +84,7 @@ public class Connexion extends HttpServlet {
     	
     	System.err.println(dao.findByEmail(user.getEmail()).getPassword()+"===="+user.getMotDePasse());
     	if(dao.findByEmail(user.getEmail()).getPassword().equals(user.getMotDePasse())) {
+    		user.setId(dao.findByEmail(user.getEmail()).getId());
     		return true;
     	}
     	else {

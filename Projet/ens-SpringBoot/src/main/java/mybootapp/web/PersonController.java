@@ -12,6 +12,7 @@ import java.util.Set;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -29,6 +30,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.validation.Valid;
+import mybootapp.authentif.Utilisateur;
 import mybootapp.business.IPersonManager;
 import mybootapp.dao.DAOPerson;
 import mybootapp.dao.PartyRepository;
@@ -43,6 +45,8 @@ public class PersonController {
 	/**
 	 * Plus d'infos sur form Spring : https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/view.html
 	 **/
+	
+	public static final String ATT_SESSION_USER = "sessionUtilisateur";
 	
 	@Autowired
 	public DAOPerson dao;
@@ -76,6 +80,7 @@ public class PersonController {
 		
 		Party par2 = new Party("Noobs");
 		par2.addPersonInParty(p);
+		party.addPersonInParty(p2);
 		
 		dao.saveParty(party);
 		dao.saveParty(par2);
@@ -157,14 +162,14 @@ public class PersonController {
     }
     
     @RequestMapping(value = "/person/edit", method = RequestMethod.GET)
-	public ModelAndView editPerson(@ModelAttribute @Valid Person p, @RequestParam(value = "id", defaultValue = "-1") Long value) {
-		if(value == -1) //return "personForm";
-			return new ModelAndView("personForm");
-		else {
-			//Person p2 = repo.findById(value).get();
-			//return new ModelAndView("personForm").addObject("firstname",p2.getFirstName());
-			return new ModelAndView("personForm");
-		}
+	public ModelAndView editPerson(@ModelAttribute @Valid Person p, @RequestParam(value = "id", defaultValue = "-1") Long value,
+			HttpSession session) {
+    		if(session.getAttribute(ATT_SESSION_USER) == null)
+    			return new ModelAndView("Interdit");
+    		Utilisateur user = (Utilisateur) session.getAttribute(ATT_SESSION_USER);
+    		if(user.getId()==value)
+    			return new ModelAndView("personForm");
+    		return new ModelAndView("Interdit");
 	}
     
     @InitBinder

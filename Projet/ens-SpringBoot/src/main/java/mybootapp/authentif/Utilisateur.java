@@ -6,8 +6,15 @@ public class Utilisateur {
     private String email;
     private String motDePasse;
     private String nom;
+    private Long id;
 
-    public void setEmail(String email) {
+    public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public void setEmail(String email) {
 	this.email = email;
     }
     public String getEmail() {
