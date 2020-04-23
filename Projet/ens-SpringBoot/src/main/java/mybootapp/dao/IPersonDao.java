@@ -13,4 +13,5 @@ public interface IPersonDao {
 	public Person findByEmail(String email);
 	Person findPersonById(Long id);
 	Party findPartyById(Long id);
+	Party findPartyByPartyName(String partyName);
 }

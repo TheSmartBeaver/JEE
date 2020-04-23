@@ -60,5 +60,16 @@ public class DAOPerson implements IPersonDao {
 	public Party findPartyById(Long id) {
 		return repoParty.findById(id).get();
 	}
+	@Override
+	public Party findPartyByPartyName(String partyName) {
+		List<Party> pList = repoParty.findByPartyName(partyName);
+		if(pList.size()>1) {
+			System.err.println("Problème group pas unique");
+			System.exit(1);
+		}
+		if(pList.size()<1)
+			return null;
+		return pList.get(0);
+	}
 	
 }

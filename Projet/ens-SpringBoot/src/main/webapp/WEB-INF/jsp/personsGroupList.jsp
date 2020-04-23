@@ -34,9 +34,6 @@
 				</tr>
 			</c:forEach>
 		</table>
-		<p>
-			<a class="btn btn-info" href="${edit}">Create new person</a>
-		</p>
 	</div>
 </body>
 </html>

@@ -5,8 +5,10 @@ import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
@@ -92,11 +94,11 @@ public class PersonController {
     
     //TODO: Remplacer par un truc sélectionnant des groupes
     @ModelAttribute("availableGroups")
-    public Map<String, String> personGroup() {
-        Map<String, String> groups = new LinkedHashMap<>();
-        groups.put("group1", "Group 1");
-        groups.put("group2", "Group 2");
-        return groups;
+    public Set<String> personGroup() {
+    	Set<String> personGroup = new HashSet<String>();
+    	for(Party p : dao.findAllParties())
+    		personGroup.add(p.getPartyName());
+        return personGroup;
     }
 
     
@@ -138,10 +140,12 @@ public class PersonController {
             return "personForm";
         }
         System.err.println("AVANT SAVE NOUVELLE PERSON");
+        /*On récupère le group correspondant dans la BDD*/
+        p.setPersonParty(dao.findPartyByPartyName(p.getPersonParty().getPartyName()));
         dao.savePerson(p);
         System.err.println("APRES SAVE NOUVELLE PERSON");
         System.err.println(dao.findAllPersons().toString());
-        return "redirect:/person/list";
+        return "redirect:/group/list";
     }
     
   //TODO: Remplacer par toutes les personnes
@@ -171,8 +175,8 @@ public class PersonController {
         binder.registerCustomEditor(Date.class, null,  new CustomDateEditor(dateFormat, true));
     }
     
-    /*@InitBinder
+    @InitBinder
     public void initBinder(WebDataBinder b) {
-        b.registerCustomEditor(ProductCode.class, new EditorProductCode());
-    }*/
+        b.registerCustomEditor(Party.class, new EditorParty());
+    }
 }

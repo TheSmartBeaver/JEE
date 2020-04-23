@@ -56,6 +56,15 @@
 					element="div" />
 			</div>
 			<div class="form-group">
+    			<label for="personParty">Groupe:</label>
+    			<form:select path="personParty" multiple="false" class="form-control">
+        			<form:option value="" label="--- Select ---" />
+        			<form:options items="${availableGroups}" />
+    			</form:select>
+    			<form:errors path="personParty" cssClass="alert alert-warning"
+        			element="div" />
+			</div>
+			<div class="form-group">
 				<label for="party">RAJOUTER LES GROUPES !! REGARDER un peu
 					"types" de product et codeProduct car party est un champs complexe</label>
 			</div>
