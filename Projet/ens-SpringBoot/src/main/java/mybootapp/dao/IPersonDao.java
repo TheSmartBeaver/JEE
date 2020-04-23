@@ -11,6 +11,6 @@ public interface IPersonDao {
 	public Iterable<Person> findAllPersons();
 	public Iterable<Person> findAllPersonsinParty(Long partyId);
 	public Person findByEmail(String email);
-	Person findById(Long id);
-
+	Person findPersonById(Long id);
+	Party findPartyById(Long id);
 }

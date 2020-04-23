@@ -1,17 +1,23 @@
 package mybootapp.web;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -32,10 +38,9 @@ import mybootapp.model.Person;
 @RequestMapping("/")
 public class PersonController {
 
-	/*DAOPerson dao = new DAOPerson();
-	PersonRepository repo = dao.getPersonRepository();
-	PartyRepository repoParty = dao.getPartyRepository();
-	Map<String, Object> model = new HashMap<String, Object>();*/
+	/**
+	 * Plus d'infos sur form Spring : https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/view.html
+	 **/
 	
 	@Autowired
 	public DAOPerson dao;
@@ -50,27 +55,34 @@ public class PersonController {
 	@PostConstruct
 	public void init() {
 		Person p = new Person("Painbeurre","Painbeurrezder","aaa@gmail.com","pswaaa");
+		Person p2 = new Person("Painbeurrettete","Painbeurretgerrz","ccc@gmail.com","pswccc");
+		Date birthday;
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		String date1 = "2006-02-17";
+		try {
+			birthday = simpleDateFormat.parse(date1);
+			p.setBirthDay(birthday);
+			p2.setBirthDay(birthday);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		p.setWebsite("monWebite@lol.fr");
+		
 		System.err.println("Id de p1 :" + p.getId());
 		Party party = new Party("Pain");
 		
 		Party par2 = new Party("Noobs");
 		par2.addPersonInParty(p);
 		
-		/*repoParty.save(party);
-		repoParty.save(par2);
-		repo.save(p);*/
-		
 		dao.saveParty(party);
 		dao.saveParty(par2);
 		dao.savePerson(p);
 		dao2.savePerson(new Person("gg","oo","bbb@gmail.com","pswbbb"));
 		
-		Person p2 = new Person("Painbeurrettete","Painbeurretgerrz","ccc@gmail.com","pswccc");
 		System.err.println("Id de p2 :" + p2.getId());
-		//repo.save(p2);
 		dao.savePerson(p2);
 		
-		//System.err.println(repo.findAll().toString());
 		System.err.println(dao.findAllParties().toString());
 		System.err.println(dao2.findAllPersons().toString());
 	}
@@ -94,7 +106,7 @@ public class PersonController {
         if (personId != null) {
             logger.info("find person " + personId);
             System.err.println("Il y'a une personne dont le nom est à éditer");
-            return dao.findById(personId);
+            return dao.findPersonById(personId);
         }
         Person p = new Person("","","","");
         //p.setId(newId++);
@@ -119,7 +131,10 @@ public class PersonController {
     public String savePerson(@ModelAttribute @Valid Person p, BindingResult result) {
     	System.err.println("AVANT VALIDATE PERSON");
         validator.validate(p, result);
+        System.err.println(p.getBirthDay());
+        System.err.println("APRES VALIDATE PERSON");
         if (result.hasErrors()) {
+        	System.err.println("Il Y A ERREUR");
             return "personForm";
         }
         System.err.println("AVANT SAVE NOUVELLE PERSON");
@@ -147,6 +162,14 @@ public class PersonController {
 			return new ModelAndView("personForm");
 		}
 	}
+    
+    @InitBinder
+    public void initBinder(HttpServletRequest request, ServletRequestDataBinder binder)
+    {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(false);
+        binder.registerCustomEditor(Date.class, null,  new CustomDateEditor(dateFormat, true));
+    }
     
     /*@InitBinder
     public void initBinder(WebDataBinder b) {

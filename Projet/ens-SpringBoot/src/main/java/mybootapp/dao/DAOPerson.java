@@ -48,13 +48,17 @@ public class DAOPerson implements IPersonDao {
 		return pList.get(0);
 	}
 	@Override
-	public Person findById(Long id) {
+	public Person findPersonById(Long id) {
 		return repo.findById(id).get();
 	}
 	@Override
 	public Iterable<Person> findAllPersonsinParty(Long partyId) {
 		Party party = repoParty.findById(partyId).get();
 		return party.getPersonsInParty();
+	}
+	@Override
+	public Party findPartyById(Long id) {
+		return repoParty.findById(id).get();
 	}
 	
 }

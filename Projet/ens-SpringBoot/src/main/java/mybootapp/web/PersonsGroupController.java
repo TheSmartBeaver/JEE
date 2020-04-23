@@ -30,6 +30,11 @@ public class PersonsGroupController {
         return dao.findAllPersonsinParty(groupId);
     }
 	
+	@ModelAttribute("selectedGroup")
+    String groupSelected(@RequestParam(value = "id", required = false) Long groupId) {
+        return dao.findPartyById(groupId).getPartyName();
+    }
+	
 	@RequestMapping(value = "/personsGroup/list", method = RequestMethod.GET)
     public String listPersons() {
         logger.info("List of persons in Group");

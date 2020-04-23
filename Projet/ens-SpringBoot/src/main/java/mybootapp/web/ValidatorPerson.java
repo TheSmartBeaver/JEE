@@ -1,5 +1,7 @@
 package mybootapp.web;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Service;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
@@ -27,6 +29,18 @@ public class ValidatorPerson implements Validator {
         
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password",
                 "person.password");
+        
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "mail",
+                "person.mail");
+        
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "website",
+                "person.website");
+        
+        Date birthday = person.getBirthDay();
+        System.err.println("birthday = "+birthday);
+        
+        /*ValidationUtils.rejectIfEmptyOrWhitespace(errors, "birthDay",
+                "person.birthDay");*/
         
         /*ValidationUtils.rejectIfEmptyOrWhitespace(errors, "party",
                 "person.party");*/
