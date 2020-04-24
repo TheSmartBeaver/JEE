@@ -7,7 +7,7 @@ import mybootapp.model.Product;
 
 public interface IPersonManager {
 
-    Collection<Person> findAll();
+    Iterable<Person> findAll();
 
     void save(Person p);
 

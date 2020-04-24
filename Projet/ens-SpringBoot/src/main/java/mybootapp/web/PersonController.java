@@ -29,12 +29,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import mybootapp.Starter;
+
 import jakarta.validation.Valid;
 import mybootapp.authentif.Utilisateur;
 import mybootapp.business.IPersonManager;
 import mybootapp.dao.DAOPerson;
 import mybootapp.dao.PartyRepository;
 import mybootapp.dao.PersonRepository;
+import mybootapp.generation.Generation;
 import mybootapp.model.Party;
 import mybootapp.model.Person;
 
@@ -48,6 +51,7 @@ public class PersonController {
 	
 	public static final String ATT_SESSION_USER = "sessionUtilisateur";
 	
+	
 	@Autowired
 	public DAOPerson dao;
 	
@@ -60,7 +64,7 @@ public class PersonController {
 	
 	@PostConstruct
 	public void init() {
-		Person p = new Person("Painbeurre","Painbeurrezder","aaa@gmail.com","pswaaa");
+		/*Person p = new Person("Painbeurre","Painbeurrezder","aaa@gmail.com","pswaaa");
 		Person p2 = new Person("Painbeurrettete","Painbeurretgerrz","ccc@gmail.com","pswccc");
 		Date birthday;
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -91,7 +95,10 @@ public class PersonController {
 		dao.savePerson(p2);
 		
 		System.err.println(dao.findAllParties().toString());
-		System.err.println(dao2.findAllPersons().toString());
+		System.err.println(dao2.findAllPersons().toString());*/
+		
+		Generation gener = new Generation();
+		gener.generatePersonsAndGroups(dao);
 	}
 
     protected final Log logger = LogFactory.getLog(getClass());
@@ -164,11 +171,17 @@ public class PersonController {
     @RequestMapping(value = "/person/edit", method = RequestMethod.GET)
 	public ModelAndView editPerson(@ModelAttribute @Valid Person p, @RequestParam(value = "id", defaultValue = "-1") Long value,
 			HttpSession session) {
-    		if(session.getAttribute(ATT_SESSION_USER) == null)
+    		if(session.getAttribute(ATT_SESSION_USER) == null) {
+    			System.err.println("EDIT : Aucune session détecté");
     			return new ModelAndView("Interdit");
+    		}
     		Utilisateur user = (Utilisateur) session.getAttribute(ATT_SESSION_USER);
-    		if(user.getId()==value)
+    		System.err.println("EDIT : session détecté");
+    		if(user.getId().equals(value)) {
+    			System.err.println("EDIT : "+user.getId()+"=="+value);
     			return new ModelAndView("personForm");
+    			}
+    		System.err.println("EDIT : "+user.getId()+"=="+value);
     		return new ModelAndView("Interdit");
 	}
     

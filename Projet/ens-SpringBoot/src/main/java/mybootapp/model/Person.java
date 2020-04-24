@@ -25,12 +25,7 @@ import mybootapp.model.Party;
 
 @Entity(name = "Person")
 
-@Table(name = "TPerson",
-   uniqueConstraints = {
-      @UniqueConstraint(columnNames = {
-         "first_name", "last_name"
-      })
-   })
+@Table(name = "TPerson")
 public class Person implements Serializable {
 
    private static final long serialVersionUID = 1L;
@@ -51,7 +46,7 @@ public class Person implements Serializable {
    
    @Basic(optional = true)
    @Column(name = "mail", length = 200, 
-   		unique = false)
+   		unique = true)
    private String mail;
    
    @Basic(optional = true)

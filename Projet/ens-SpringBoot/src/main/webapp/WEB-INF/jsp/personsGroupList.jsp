@@ -2,6 +2,7 @@
 <%@ include file="/WEB-INF/jsp/include.jsp"%>
 
 <c:url var="edit" value="/person/edit" />
+<c:url var="groupList" value="/group/list" />
 
 <html>
 <head>
@@ -9,6 +10,23 @@
 <%@ include file="/WEB-INF/jsp/head-bootstrap.jsp"%>
 </head>
 <body>
+	<fieldset>
+		<legend>Menu</legend>
+		<c:choose>
+			<c:when test="${!empty sessionScope.sessionUtilisateur}">
+				<p>connecté(e) avec l'adresse :
+					${sessionScope.sessionUtilisateur.email}</p>
+				<a href="/logout"> logout </a>
+				<br />
+			</c:when>
+			<c:otherwise>
+				<a href="/login"> login </a>
+				<br />
+			</c:otherwise>
+		</c:choose>
+		<a href="${groupList}"> liste des groupes </a>
+	</fieldset>
+
 	<div class="container">
 		<h1>
 			Persons in Group sans les détails :

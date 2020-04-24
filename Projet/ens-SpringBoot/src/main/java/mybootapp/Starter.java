@@ -25,6 +25,8 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableJpaRepositories(basePackageClasses = Starter.class)
 @EntityScan(basePackageClasses = Starter.class)
 public class Starter extends SpringBootServletInitializer {
+	
+	public static boolean generatedRandomPersons = false;
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
