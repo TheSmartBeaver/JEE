@@ -18,6 +18,7 @@
 					${sessionScope.sessionUtilisateur.email}</p>
 				<a href="/logout"> logout </a>
 				<br />
+				<a href="person/edit/id=${sessionScope.sessionUtilisateur.id}"> modifier mes infos </a>
 			</c:when>
 			<c:otherwise>
 				<a href="/login"> login </a>
