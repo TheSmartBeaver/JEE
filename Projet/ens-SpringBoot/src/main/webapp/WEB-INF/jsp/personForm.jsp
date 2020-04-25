@@ -24,6 +24,7 @@
 				<br />
 			</c:otherwise>
 		</c:choose>
+		<a href="/search"> rechercher </a>
 		<a href="${groupList}"> liste des groupes </a>
 	</fieldset>
 	<div class="container">

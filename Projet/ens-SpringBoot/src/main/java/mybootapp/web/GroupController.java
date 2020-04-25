@@ -1,27 +1,14 @@
 package mybootapp.web;
 
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
-
-import jakarta.validation.Valid;
 import mybootapp.dao.DAOPerson;
 import mybootapp.model.Party;
-import mybootapp.model.Product;
-import mybootapp.model.ProductCode;
 
 @Controller()
 @RequestMapping("/")
@@ -46,18 +33,4 @@ public class GroupController {
         return "groupList";
     }
     
-    @Autowired
-    ValidatorProduct validator;
-
-    @RequestMapping(value = "/group/list", method = RequestMethod.POST)
-    public String saveProduct(@ModelAttribute @Valid Product p, BindingResult result) {
-    	System.err.println("SAVE PRODUCT");
-    	System.err.println(p.getType());
-        //validator.validate(p, result);
-        if (result.hasErrors()) {
-            return "groupList";
-        }
-        //manager.save(p);
-        return "groupList";
-    }
 }

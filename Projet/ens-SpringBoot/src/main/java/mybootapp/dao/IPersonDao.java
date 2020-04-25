@@ -1,5 +1,7 @@
 package mybootapp.dao;
 
+import java.util.List;
+
 import mybootapp.model.Party;
 import mybootapp.model.Person;
 
@@ -11,7 +13,11 @@ public interface IPersonDao {
 	public Iterable<Person> findAllPersons();
 	public Iterable<Person> findAllPersonsinParty(Long partyId);
 	public Person findByEmail(String email);
-	Person findPersonById(Long id);
-	Party findPartyById(Long id);
-	Party findPartyByPartyName(String partyName);
+	public Person findPersonById(Long id);
+	public Party findPartyById(Long id);
+	public Party findPartyByPartyName(String partyName);
+	public Iterable<Party> findPartyByPartyNameLike(String partyName);
+	
+	public Iterable<Person> findPersonByFirstNameLike(String firstName);
+	public Iterable<Person> findPersonByLastNameLike(String firstName);
 }

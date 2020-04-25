@@ -28,6 +28,7 @@
 			</c:otherwise>
 		</c:choose>
 	</fieldset>
+	<a href="/search"> rechercher </a>
 	<div class="container">
         <h1>Groups List</h1>
         <table class="table table-hover">

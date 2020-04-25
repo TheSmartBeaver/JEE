@@ -10,6 +10,7 @@
     </head>
     <body>
     <a href="${groupList}"> liste des groupes </a>
+    <a href="/search"> rechercher </a>
     
         <form action="<%= request.getContextPath() %>/login" method="post">
             <fieldset>

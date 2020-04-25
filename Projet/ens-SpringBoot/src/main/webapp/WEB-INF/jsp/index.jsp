@@ -15,5 +15,6 @@
 	<h1>Bienvenue sur appli Groupe d'étudiant</h1>
 	<p><a href="/login"> login </a></p>
 	<p><a href="${groupList}"> liste des groupes </a> </p>
+	<p><a href="/search"> rechercher </a></p>
 </body>
 </html>

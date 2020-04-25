@@ -64,39 +64,6 @@ public class PersonController {
 	
 	@PostConstruct
 	public void init() {
-		/*Person p = new Person("Painbeurre","Painbeurrezder","aaa@gmail.com","pswaaa");
-		Person p2 = new Person("Painbeurrettete","Painbeurretgerrz","ccc@gmail.com","pswccc");
-		Date birthday;
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		String date1 = "2006-02-17";
-		try {
-			birthday = simpleDateFormat.parse(date1);
-			p.setBirthDay(birthday);
-			p2.setBirthDay(birthday);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		
-		p.setWebsite("monWebite@lol.fr");
-		
-		System.err.println("Id de p1 :" + p.getId());
-		Party party = new Party("Pain");
-		
-		Party par2 = new Party("Noobs");
-		par2.addPersonInParty(p);
-		party.addPersonInParty(p2);
-		
-		dao.saveParty(party);
-		dao.saveParty(par2);
-		dao.savePerson(p);
-		dao2.savePerson(new Person("gg","oo","bbb@gmail.com","pswbbb"));
-		
-		System.err.println("Id de p2 :" + p2.getId());
-		dao.savePerson(p2);
-		
-		System.err.println(dao.findAllParties().toString());
-		System.err.println(dao2.findAllPersons().toString());*/
-		
 		Generation gener = new Generation();
 		gener.generatePersonsAndGroups(dao);
 	}

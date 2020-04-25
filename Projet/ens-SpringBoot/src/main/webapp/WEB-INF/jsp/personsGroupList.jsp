@@ -25,6 +25,7 @@
 				<br />
 			</c:otherwise>
 		</c:choose>
+		<a href="/search"> rechercher </a>
 		<a href="${groupList}"> liste des groupes </a>
 	</fieldset>
 
@@ -41,9 +42,7 @@
 			</tr>
 			<c:forEach items="${personsInGroup}" var="pers">
 				<tr>
-					<td><a href="${edit}?id=${pers.id}"> <c:out
-								value="${pers.firstName}" />
-					</a></td>
+					<td><c:out value="${pers.firstName}" /></td>
 					<td><i>$<c:out value="${pers.lastName}" /></i></td>
 					<td><i>$<c:out value="${pers.website}" /></i></td>
 				</tr>

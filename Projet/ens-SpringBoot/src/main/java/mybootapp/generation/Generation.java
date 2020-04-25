@@ -41,7 +41,7 @@ public class Generation {
 				for(String n1 : noms) {
 					for(String n2 : noms) {
 						comptPers++;
-						p = new Person(n1+n2,p1+n2,n1+n2+p1+p2+"@gmail.com",n1+n2);
+						p = new Person(n1+n2,p1+p2,n1+n2+p1+p2+"@gmail.com",n1+n2);
 						p.setWebsite(n1+n2+p1+p2+".lololol.fr");
 						p.setBirthDay(randomDate().getTime());
 						p.setPersonParty(formedGroups.get(ThreadLocalRandom.current().nextInt(0,  formedGroups.size())));
