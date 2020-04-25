@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.validation.Valid;
-import mybootapp.business.IProductManager;
 import mybootapp.dao.DAOPerson;
 import mybootapp.model.Party;
 import mybootapp.model.Product;
