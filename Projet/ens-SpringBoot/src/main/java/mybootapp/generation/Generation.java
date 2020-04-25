@@ -46,22 +46,11 @@ public class Generation {
 						p.setBirthDay(randomDate().getTime());
 						p.setPersonParty(formedGroups.get(ThreadLocalRandom.current().nextInt(0,  formedGroups.size())));
 						formedPersons.add(p);
-						
-						/*combinaison.add(n1+n2+p1+p2);
-						if(oldCombinaisonSize!=combinaison.size())
-							oldCombinaisonSize++;
-						else {
-							System.err.println("doublon : "+n1+n2+p1+p2);
-							System.exit(1);
-						}*/
-						//System.err.println("GENER :"+n1+n2+p1+p2+"@gmail.com");
 					}
 				}
 			}
 		}
 		System.out.println("Compteur p : "+comptPers);
-		//System.err.println(combinaison.size()+" "+formedPersons.size());
-		//System.exit(1);
 		
 		for(Party part : formedGroups)
 			dao.saveParty(part);
@@ -74,7 +63,7 @@ public class Generation {
 	public GregorianCalendar randomDate() {
 		GregorianCalendar gc = new GregorianCalendar();
 
-        int year = randBetween(1900, 2010);
+        int year = randBetween(1970, 2010);
 
         gc.set(gc.YEAR, year);
 
@@ -89,9 +78,5 @@ public class Generation {
         return start + (int)Math.round(Math.random() * (end - start));
     }
 	
-	/*public static void main(String[] args) {
-		Generation gener = new Generation();
-		gener.generatePersonsAndGroups();
-	}*/
 	
 }

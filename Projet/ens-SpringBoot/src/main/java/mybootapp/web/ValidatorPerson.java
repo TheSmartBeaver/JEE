@@ -24,56 +24,43 @@ public class ValidatorPerson implements Validator {
         Person person = (Person) target;
 
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "firstName",
-                "person.firstName");
+                "person.firstName","Merci de saisir un Nom");
 
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "lastName",
-                "person.lastName");
+                "person.lastName","Merci de saisir un prénom");
         
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password",
-                "person.password");
+                "person.password","Merci de saisir un mdp");
         
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "mail",
-                "person.mail");
+                "person.mail","Merci de saisir un mail");
         
         String regexMail = "^[A-Za-z0-9+_.-]+@(.+)$";
         Pattern pattern = Pattern.compile(regexMail);
         Matcher matcher = pattern.matcher(person.getMail());
         if(!matcher.matches())
-        	errors.rejectValue("mail", "person.mail");
+        	errors.rejectValue("mail", "person.mail", "Mail mal formé");
         
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "website",
-                "person.website");
+                "person.website","Merci de saisir un site Web");
         
         String regexWeb = "^[A-Za-z0-9+_.-]+(.+)$";
         pattern = Pattern.compile(regexWeb);
         matcher = pattern.matcher(person.getWebsite());
         if(!matcher.matches())
-        	errors.rejectValue("website", "person.website");
+        	errors.rejectValue("website", "person.website","Site web mal formé");
         
+        try {
         Date birthday = person.getBirthDay();
         System.err.println("birthday = "+birthday);
-        
-        
-        /*ValidationUtils.rejectIfEmptyOrWhitespace(errors, "birthDay",
-                "person.birthDay");*/
-        
-        /*ValidationUtils.rejectIfEmptyOrWhitespace(errors, "party",
-                "person.party");*/
-
-
-        /*if (!(product.getPrice() > 0.0)) {
-            errors.rejectValue("price", "product.price.too.low");
         }
-        
-        ProductCode code = product.getCode();
-        if (code != null) {
-            if (!code.getBase().matches("[A-Z]")) {
-                errors.rejectValue("code", "product.code.base");
-            }
-            if (!(code.getNumber() >= 1000 && code.getNumber() <= 9999)) {
-                errors.rejectValue("code", "product.code.number");
-            }
-        }*/
+        catch(Exception e) {
+    		throw new IllegalArgumentException("Erreur dans le format de la date :(");
+    	}
+       
+        if(person.getPersonParty().getPartyName().equals(""))
+        	errors.rejectValue("personParty", "person.personParty","Veuillez sélectionner un groupe !");
+
     }
 
 }

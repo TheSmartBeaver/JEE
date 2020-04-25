@@ -17,12 +17,12 @@
                 <p>Vous pouvez vous connecter via ce formulaire.</p>
 
                 <label for="nom">Adresse email <span class="requis">*</span></label>
-                <input type="email" id="email" name="email" value="<c:out value="${utilisateur.email}"/>" size="20" maxlength="60" />
+                <input type="email" id="email" name="email" value="<c:out value="${utilisateur.email}"/>"  size="20" maxlength="60" />
                 <span class="erreur">${form.erreurs['email']}</span>
                 <br />
 
                 <label for="motdepasse">Mot de passe <span class="requis">*</span></label>
-                <input type="password" id="motdepasse" name="motdepasse" value="" size="20" maxlength="20" minlength="1"/>
+                <input type="password" id="motdepasse" name="motdepasse" value="" size="20" maxlength="30" minlength="1"/>
                 <span class="erreur">${form.erreurs['motdepasse']}</span>
                 <br />
 
