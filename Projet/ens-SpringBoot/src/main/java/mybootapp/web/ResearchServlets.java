@@ -90,7 +90,7 @@ public class ResearchServlets extends HttpServlet {
             else
             	printWriter.print("<td>firstName</td><td>lastName</td><td>Groupe</td><td>SiteWeb</td><td>Mail</td><td>Anniversaire</td>");
             
-            for(Person p : dao.findPersonByLastNameLike("%" + firstName + "%")) {
+            for(Person p : dao.findPersonByFirstNameLike("%" + firstName + "%")) {
             	printWriter.print("<tr>");
             	printWriter.print("<td>" + p.getFirstName() + "</td>");
             	printWriter.print("<td>" + p.getLastName() + "</td>");

@@ -26,7 +26,7 @@ import mybootapp.model.Party;
 @Entity(name = "Person")
 
 @Table(name = "TPerson")
-public class Person implements Serializable {
+public class Person implements Serializable, Comparable<Person> {
 
    private static final long serialVersionUID = 1L;
 
@@ -163,6 +163,15 @@ public Party getPersonParty() {
 
 public void setPersonParty(Party personParty) {
 	this.personParty= personParty;
+}
+
+@Override
+public int compareTo(Person p) {
+	if(this.firstName.compareTo(p.firstName)==0)
+		return this.lastName.compareTo(p.lastName);
+	else
+		return this.firstName.compareTo(p.firstName);
+	
 }
 
 

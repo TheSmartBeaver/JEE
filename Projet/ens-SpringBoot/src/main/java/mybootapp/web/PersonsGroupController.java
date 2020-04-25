@@ -1,5 +1,9 @@
 package mybootapp.web;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -32,7 +36,14 @@ public class PersonsGroupController {
 	@ModelAttribute("personsInGroup")
     Iterable<Person> personsInGroup(@RequestParam(value = "id", required = false) Long groupId) {
         logger.info("Making list of persons in group : "+groupId);
-        return dao.findAllPersonsinParty(groupId);
+        
+        /*On effectue un tri en usant de l'interface Comparable implémenté par Person*/
+        ArrayList<Person> list = new ArrayList<Person>();
+        for(Person p : dao.findAllPersonsinParty(groupId)) {
+        	list.add(p);
+        }
+        Collections.sort(list);
+        return list;
     }
 	
 	@ModelAttribute("selectedGroup")
