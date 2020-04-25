@@ -3,6 +3,7 @@
 <%@ include file="/WEB-INF/jsp/include.jsp"%>
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<c:url var="listGr" value="/personsGroup/list" />
 
 <html>
 <head>
@@ -32,7 +33,7 @@
             <c:forEach items="${availableGroups}" var="group">
                 <tr>
                     <td> <c:out value="${group.id}" /></td>
-                    <td><i><a href="${edit}?id=${group.id}">$<c:out value="${group.partyName}" /></a></i></td>
+                    <td><i><a href="${listGr}?id=${group.id}">$<c:out value="${group.partyName}" /></a></i></td>
                 </tr>
             </c:forEach>
         </table>

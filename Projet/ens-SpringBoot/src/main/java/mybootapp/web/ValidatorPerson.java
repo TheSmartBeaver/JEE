@@ -1,6 +1,8 @@
 package mybootapp.web;
 
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.springframework.stereotype.Service;
 import org.springframework.validation.Errors;
@@ -33,11 +35,24 @@ public class ValidatorPerson implements Validator {
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "mail",
                 "person.mail");
         
+        String regexMail = "^[A-Za-z0-9+_.-]+@(.+)$";
+        Pattern pattern = Pattern.compile(regexMail);
+        Matcher matcher = pattern.matcher(person.getMail());
+        if(!matcher.matches())
+        	errors.rejectValue("mail", "person.mail");
+        
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "website",
                 "person.website");
         
+        String regexWeb = "^[A-Za-z0-9+_.-]+(.+)$";
+        pattern = Pattern.compile(regexWeb);
+        matcher = pattern.matcher(person.getWebsite());
+        if(!matcher.matches())
+        	errors.rejectValue("website", "person.website");
+        
         Date birthday = person.getBirthDay();
         System.err.println("birthday = "+birthday);
+        
         
         /*ValidationUtils.rejectIfEmptyOrWhitespace(errors, "birthDay",
                 "person.birthDay");*/

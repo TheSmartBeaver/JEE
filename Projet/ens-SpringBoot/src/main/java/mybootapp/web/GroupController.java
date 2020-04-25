@@ -40,23 +40,6 @@ public class GroupController {
         return dao.findAllParties();
     }
     
-    @ModelAttribute
-    public Product newProduct(
-            @RequestParam(value = "id", required = false) Integer productNumber) {
-        if (productNumber != null) {
-            logger.info("find product " + productNumber);
-            return null;
-            //return manager.find(productNumber);
-        }
-        Product p = new Product();
-        p.setNumber(null);
-        p.setName("");
-        p.setPrice(0.0);
-        p.setDescription("");
-        logger.info("new product = " + p);
-        return p;
-    }
-    
     @RequestMapping(value = "/group/list", method = RequestMethod.GET)
     public String listProducts() {
         logger.info("List of products");
@@ -76,10 +59,5 @@ public class GroupController {
         }
         //manager.save(p);
         return "groupList";
-    }
-    
-    @InitBinder
-    public void initBinder(WebDataBinder b) {
-        b.registerCustomEditor(ProductCode.class, new EditorProductCode());
     }
 }

@@ -188,6 +188,7 @@ public class PersonController {
     @InitBinder
     public void initBinder(HttpServletRequest request, ServletRequestDataBinder binder)
     {
+    	//TODO: Comment traiter date mal formée ??
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         dateFormat.setLenient(false);
         binder.registerCustomEditor(Date.class, null,  new CustomDateEditor(dateFormat, true));

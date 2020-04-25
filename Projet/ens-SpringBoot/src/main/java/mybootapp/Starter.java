@@ -40,6 +40,13 @@ public class Starter extends SpringBootServletInitializer {
         r.setBasenames("/springapp/web/product");
         return r;
     }*/
+	
+	@Bean("messageSource")
+	public ResourceBundleMessageSource messageSource() {
+	    ResourceBundleMessageSource r = new ResourceBundleMessageSource();
+	    r.setBasenames("/springapp/web/person");
+	    return r;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(Starter.class, args);
