@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet("/logout")
-public class Deconnexion extends HttpServlet {
+public class DeconnexionServlet extends HttpServlet {
     public static final String VUE = "/WEB-INF/jsp/connexion.jsp";
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {

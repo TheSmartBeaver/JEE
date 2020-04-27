@@ -14,13 +14,13 @@ import mybootapp.model.Person;
 public class DAOPerson implements IPersonDao {
 
 	@Autowired
-	PersonRepository repo;
+	PersonRepository repoPerson;
 	@Autowired
 	PartyRepository repoParty;
 	
 	@Override
 	public void savePerson(Person p) {
-		repo.save(p);
+		repoPerson.save(p);
 	}
 	@Override
 	public void saveParty(Party p) {
@@ -33,12 +33,12 @@ public class DAOPerson implements IPersonDao {
 
 	@Override
 	public Iterable<Person> findAllPersons() {
-		return repo.findAll();
+		return repoPerson.findAll();
 	}
 
 	@Override
 	public Person findByEmail(String email) {
-		List<Person> pList = repo.findByMail(email);
+		List<Person> pList = repoPerson.findByMail(email);
 		if(pList.size()>1) {
 			System.err.println("Problème mail pas unique");
 			System.exit(1);
@@ -49,7 +49,7 @@ public class DAOPerson implements IPersonDao {
 	}
 	@Override
 	public Person findPersonById(Long id) {
-		return repo.findById(id).get();
+		return repoPerson.findById(id).get();
 	}
 	@Override
 	public Iterable<Person> findAllPersonsinParty(Long partyId) {
@@ -77,11 +77,11 @@ public class DAOPerson implements IPersonDao {
 	}
 	@Override
 	public Iterable<Person> findPersonByFirstNameLike(String firstName) {
-		return repo.findByFirstNameLike(firstName);
+		return repoPerson.findByFirstNameLikeIgnoreCase(firstName);
 	}
 	@Override
 	public Iterable<Person> findPersonByLastNameLike(String lastName) {
-		return repo.findByLastNameLike(lastName);
+		return repoPerson.findByLastNameLikeIgnoreCase(lastName);
 	}
 	
 }

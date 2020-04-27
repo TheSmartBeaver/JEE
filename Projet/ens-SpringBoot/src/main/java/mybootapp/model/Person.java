@@ -2,7 +2,6 @@ package mybootapp.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Set;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -12,8 +11,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.PostUpdate;
-import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -25,7 +22,11 @@ import mybootapp.model.Party;
 
 @Entity(name = "Person")
 
-@Table(name = "TPerson")
+@Table(name = "TPerson", uniqueConstraints = {
+	      @UniqueConstraint(columnNames = {
+	    	         "first_name", "last_name"
+	    	      })
+	    	   })
 public class Person implements Serializable, Comparable<Person> {
 
    private static final long serialVersionUID = 1L;

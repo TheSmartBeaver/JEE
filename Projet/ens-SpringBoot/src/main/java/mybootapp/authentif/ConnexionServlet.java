@@ -3,7 +3,6 @@ package mybootapp.authentif;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,15 +11,15 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import jakarta.validation.constraints.Email;
 import mybootapp.authentif.Utilisateur;
 import mybootapp.dao.DAOPerson;
-import mybootapp.model.Party;
 import mybootapp.authentif.ConnexionForm;
 
 @WebServlet("/login")
-public class Connexion extends HttpServlet {
-    public static final String ATT_USER         = "utilisateur";
+public class ConnexionServlet extends HttpServlet {
+	
+	private static final long serialVersionUID = 3176964357733003735L;
+	public static final String ATT_USER         = "utilisateur";
     public static final String ATT_FORM         = "form";
     public static final String ATT_SESSION_USER = "sessionUtilisateur";
     public static final String VUE              = "/WEB-INF/jsp/connexion.jsp";
@@ -52,6 +51,7 @@ public class Connexion extends HttpServlet {
             	System.err.println("mot de passe incorrect");
             	form.setResultat("Authentification échouée");
             	request.setAttribute( ATT_FORM, form );
+            	/*Erreur détecté donc on redirige sur le formulaire*/
             	this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
             	return;
             }
@@ -67,13 +67,17 @@ public class Connexion extends HttpServlet {
             this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
             
         } else {
-            //session.setAttribute( ATT_SESSION_USER, null );
+        	/*Erreur détecté donc on redirige sur le formulaire*/
         	this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
         }
     }
-    
+    /**
+     * 
+     * @param user l'objet utilisateur dont on va comparer les champs
+     * @param form Objet qui servira à afficher d'éventuelles erreurs
+     * @return true si authentification succès
+     */
     public boolean authentification(Utilisateur user, ConnexionForm form) {
-    	dao.findAllPersons();
     	System.err.println("On cherche utilisateur avec cet email : "+user.getEmail());
     	if(dao.findByEmail(user.getEmail())==null) {
     		form.setErreur("email", "Mail inexistant");

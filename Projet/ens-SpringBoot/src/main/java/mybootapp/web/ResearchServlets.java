@@ -16,6 +16,10 @@ import mybootapp.dao.DAOPerson;
 import mybootapp.model.Party;
 import mybootapp.model.Person;
 
+/*Plus de possibilités ici 
+ * https://docs.spring.io/spring-data/jpa/docs/1.5.1.RELEASE/reference/html/jpa.repositories.html#jpa.query-methods.query-creation 
+ */
+
 @WebServlet("/search")
 public class ResearchServlets extends HttpServlet {
 

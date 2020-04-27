@@ -1,13 +1,8 @@
 package mybootapp.web;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Collection;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Set;
 
 import javax.annotation.PostConstruct;
@@ -29,14 +24,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import mybootapp.Starter;
-
 import jakarta.validation.Valid;
 import mybootapp.authentif.Utilisateur;
-import mybootapp.business.IPersonManager;
 import mybootapp.dao.DAOPerson;
-import mybootapp.dao.PartyRepository;
-import mybootapp.dao.PersonRepository;
 import mybootapp.generation.Generation;
 import mybootapp.model.Party;
 import mybootapp.model.Person;
@@ -80,7 +70,7 @@ public class PersonController {
         return personGroup;
     }
 
-    
+    /*PLUS NECESSAIRE ???*/
     @ModelAttribute
     public Person newPerson(
             @RequestParam(value = "id", required = false) Long personId) {
@@ -99,11 +89,6 @@ public class PersonController {
         return p;
     }
     
-    @RequestMapping(value = "/person/list", method = RequestMethod.GET)
-    public String listPersons() {
-        logger.info("List of persons");
-        return "personsList";
-    }
     
     @Autowired
     ValidatorPerson validator;
@@ -128,6 +113,7 @@ public class PersonController {
     }
     
   //TODO: Remplacer par toutes les personnes
+    //PLUS NECESSAIRE ???
     @ModelAttribute("persons")
     Iterable<Person> persons() {
         logger.info("Making list of persons");

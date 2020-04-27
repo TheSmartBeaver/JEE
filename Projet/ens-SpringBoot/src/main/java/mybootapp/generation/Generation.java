@@ -19,13 +19,12 @@ public class Generation {
 	public static String[] groups = {"Noob ","Slayer ","ILD ","GIG ","IAAA ","IMD ","Mage Noir","Snob","80's","360","Issou","Devil","PGM"};
 	
 	public void generatePersonsAndGroups(DAOPerson dao) {
-		/*Date randomDate = new Date(ThreadLocalRandom.current()
-                .nextLong(d1.getTime(), d2.getTime()));*/
 
 		int comptPers = 0, comptGroups = 0;
 		ArrayList<Party> formedGroups = new ArrayList<>();
 		ArrayList<Person> formedPersons = new ArrayList<>();
-		HashSet<String> combinaison = new HashSet<String>();
+		
+		/*On génère les groupes*/
 		for(String n1 : groups) {
 			for(String n2 : groups) {
 				comptGroups++;
@@ -34,7 +33,7 @@ public class Generation {
 		}
 		System.out.println("Compteur g : "+comptGroups);
 		
-		//int oldCombinaisonSize = 0;
+		/*On génère les noms et prénoms*/
 		Person p;
 		for(String p1 : prenoms) {
 			for(String p2 : prenoms) {
@@ -52,6 +51,7 @@ public class Generation {
 		}
 		System.out.println("Compteur p : "+comptPers);
 		
+		/*On sauvegarde les groupes et personnes créés*/
 		for(Party part : formedGroups)
 			dao.saveParty(part);
 		for(Person pers : formedPersons) {

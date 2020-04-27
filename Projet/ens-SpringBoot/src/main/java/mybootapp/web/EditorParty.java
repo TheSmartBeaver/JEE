@@ -3,7 +3,6 @@ package mybootapp.web;
 import java.beans.PropertyEditorSupport;
 
 import mybootapp.model.Party;
-import mybootapp.model.ProductCode;
 
 class EditorParty extends PropertyEditorSupport {
 
@@ -11,7 +10,7 @@ class EditorParty extends PropertyEditorSupport {
     public String getAsText() {
     	
         Object o = this.getValue();
-        if (o instanceof ProductCode) {
+        if (o instanceof Party) {
             Party p = (Party) o;
             return p.getPartyName();
         }
