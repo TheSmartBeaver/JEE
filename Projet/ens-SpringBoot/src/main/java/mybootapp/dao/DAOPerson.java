@@ -83,5 +83,9 @@ public class DAOPerson implements IPersonDao {
 	public Iterable<Person> findPersonByLastNameLike(String lastName) {
 		return repoPerson.findByLastNameLikeIgnoreCase(lastName);
 	}
+	public void deleteAll() {
+		repoParty.deleteAll();
+		repoPerson.deleteAll();
+	}
 	
 }

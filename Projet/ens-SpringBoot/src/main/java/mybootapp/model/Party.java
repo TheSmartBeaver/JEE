@@ -54,7 +54,7 @@ public class Party implements Serializable {
 	   private String partyName;
 	   
 	   @OneToMany(cascade = { CascadeType.ALL },
-			      fetch = FetchType.LAZY, mappedBy = "personParty")
+			   fetch = FetchType.EAGER, mappedBy = "personParty")
 	   private Set<Person> personsInParty = new HashSet<Person>();
 	   
 
