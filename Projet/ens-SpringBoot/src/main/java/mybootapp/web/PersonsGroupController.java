@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import mybootapp.dao.DAOPerson;
+import mybootapp.dao.PersonService;
 import mybootapp.model.Person;
 
 @Controller
@@ -28,7 +28,7 @@ import mybootapp.model.Person;
 public class PersonsGroupController {
 	
 	@Autowired
-	public DAOPerson dao;
+	public PersonService dao;
 
 	protected final Log logger = LogFactory.getLog(getClass());
 	public static final String ATT_SESSION_USER = "sessionUtilisateur";

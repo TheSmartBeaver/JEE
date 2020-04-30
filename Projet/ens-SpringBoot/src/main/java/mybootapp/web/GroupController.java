@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import mybootapp.dao.DAOPerson;
+import mybootapp.dao.PersonService;
 import mybootapp.model.Party;
 
 @Controller()
@@ -15,7 +15,7 @@ import mybootapp.model.Party;
 public class GroupController {
 
     @Autowired
-    DAOPerson dao;
+    PersonService dao;
 
     protected final Log logger = LogFactory.getLog(getClass());
     
@@ -23,13 +23,13 @@ public class GroupController {
 
     @ModelAttribute("availableGroups")
     Iterable<Party> availableGroups() {
-        logger.info("Making list of products");
+        logger.info("Making list of groups");
         return dao.findAllParties();
     }
     
     @RequestMapping(value = "/group/list", method = RequestMethod.GET)
     public String listProducts() {
-        logger.info("List of products");
+        logger.info("List of groups");
         return "groupList";
     }
     

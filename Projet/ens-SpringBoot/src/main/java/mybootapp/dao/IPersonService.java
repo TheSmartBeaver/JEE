@@ -1,11 +1,9 @@
 package mybootapp.dao;
 
-import java.util.List;
-
 import mybootapp.model.Party;
 import mybootapp.model.Person;
 
-public interface IPersonDao {
+public interface IPersonService {
 	
 	/**
 	 * 

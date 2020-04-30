@@ -14,14 +14,12 @@ class EditorParty extends PropertyEditorSupport {
             Party p = (Party) o;
             return p.getPartyName();
         }
-        System.err.println("PARTY get As TEXT"+super.getAsText()+";");
         return super.getAsText();
     }
 
     @Override
     public void setAsText(String text) throws IllegalArgumentException {
         try {
-        	System.err.println("PARTY set As TEXT "+text+";");
             Party p = new Party(text);
             super.setValue(p);
         } catch (Exception e) {

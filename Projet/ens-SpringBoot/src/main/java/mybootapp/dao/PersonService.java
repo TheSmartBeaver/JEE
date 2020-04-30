@@ -3,15 +3,13 @@ package mybootapp.dao;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import mybootapp.model.Party;
 import mybootapp.model.Person;
 
 @Service
-public class DAOPerson implements IPersonDao {
+public class PersonService implements IPersonService {
 
 	@Autowired
 	PersonRepository repoPerson;

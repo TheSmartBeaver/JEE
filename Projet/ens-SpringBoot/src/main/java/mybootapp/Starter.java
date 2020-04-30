@@ -18,22 +18,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackageClasses = Starter.class)
 @EntityScan(basePackageClasses = Starter.class)
 public class Starter extends SpringBootServletInitializer {
-	
-	public static boolean generatedRandomPersons = false;
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(Starter.class);
 	}
-
 	
-	/*@Bean("messageSource")
-	public ResourceBundleMessageSource messageSource() {
-	    ResourceBundleMessageSource r = new ResourceBundleMessageSource();
-	    r.setBasenames("classpath:/mybootapp/web/person");
-	    return r;
-	}*/
-
 	public static void main(String[] args) {
 		SpringApplication.run(Starter.class, args);
 	}

@@ -52,7 +52,6 @@ public class ValidatorPerson implements Validator {
         
         try {
         Date birthday = person.getBirthDay();
-        System.err.println("birthday = "+birthday);
         }
         catch(Exception e) {
     		throw new IllegalArgumentException("Erreur dans le format de la date :(");

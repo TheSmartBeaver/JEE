@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import mybootapp.dao.DAOPerson;
+import mybootapp.dao.PersonService;
 import mybootapp.model.Party;
 import mybootapp.model.Person;
 
@@ -28,7 +28,7 @@ public class ResearchServlets extends HttpServlet {
     public static final String ATT_SESSION_USER = "sessionUtilisateur";
     
     @Autowired
-    DAOPerson dao;
+    PersonService dao;
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );

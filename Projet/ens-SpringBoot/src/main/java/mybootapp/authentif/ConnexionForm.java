@@ -2,17 +2,10 @@ package mybootapp.authentif;
 
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import mybootapp.authentif.Utilisateur;
-import mybootapp.dao.DAOPerson;
-import mybootapp.dao.PersonRepository;
-import mybootapp.model.Person;
 
 public final class ConnexionForm {
     private static final String CHAMP_EMAIL  = "email";
@@ -75,13 +68,6 @@ public final class ConnexionForm {
         if ( email != null && !email.matches( "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)" ) ) {
             throw new Exception( "Merci de saisir une adresse mail valide." );
         }
-        System.err.println("ooh");
-        System.err.println("aoh");
-        /*if(pList.size()!=1) {
-        	throw new Exception("Pas d'utilisateur trouvé pour cet email");
-        }*/
-        
-        //System.err.println("Trouvé : "+dao.findAllPersons().toString());
     }
 
     /**

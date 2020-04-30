@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 
-import mybootapp.dao.DAOPerson;
+import mybootapp.dao.PersonService;
 import mybootapp.model.Party;
 import mybootapp.model.Person;
 
@@ -18,7 +18,7 @@ public class Generation {
 	public static String[] noms = {"Macron","Depardieu","Vilanni","Bianchinotti","Trump","Melenchon"};
 	public static String[] groups = {"Noob ","Slayer ","ILD ","GIG ","IAAA ","IMD ","Mage Noir","Snob","80's","360","Issou","Devil","PGM"};
 	
-	public void generatePersonsAndGroups(DAOPerson dao) {
+	public void generatePersonsAndGroups(PersonService personServ) {
 
 		int comptPers = 0, comptGroups = 0;
 		ArrayList<Party> formedGroups = new ArrayList<>();
@@ -31,7 +31,6 @@ public class Generation {
 				formedGroups.add(new Party(n1+n2));
 			}
 		}
-		System.out.println("Compteur g : "+comptGroups);
 		
 		/*On génère les noms et prénoms*/
 		Person p;
@@ -49,14 +48,12 @@ public class Generation {
 				}
 			}
 		}
-		System.out.println("Compteur p : "+comptPers);
 		
 		/*On sauvegarde les groupes et personnes créés*/
 		for(Party part : formedGroups)
-			dao.saveParty(part);
+			personServ.saveParty(part);
 		for(Person pers : formedPersons) {
-			System.err.println("J'insère "+pers.toString());
-			dao.savePerson(pers);
+			personServ.savePerson(pers);
 		}
 	}
 	

@@ -9,10 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import mybootapp.authentif.Utilisateur;
-import mybootapp.dao.DAOPerson;
+import mybootapp.dao.PersonService;
 import mybootapp.authentif.ConnexionForm;
 
 @WebServlet("/login")
@@ -24,20 +26,20 @@ public class ConnexionServlet extends HttpServlet {
     public static final String ATT_SESSION_USER = "sessionUtilisateur";
     public static final String VUE              = "/WEB-INF/jsp/connexion.jsp";
     
+    protected final Log logger = LogFactory.getLog(getClass());
+    
     @Autowired
-    DAOPerson dao;
+    PersonService personServ;
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         /* Affichage de la page de connexion */
-    	System.err.println("Debut SERVLET connexion");
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
 
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
-    	System.err.println("Debut POST SERVLET connexion");
         /* Préparation de l'objet formulaire */
         ConnexionForm form = new ConnexionForm();
-        System.err.println(dao.findAllParties().toString());
+        System.err.println(personServ.findAllParties().toString());
 
         /* Traitement de la requête et récupération du bean en résultant */
         Utilisateur utilisateur = form.connecterUtilisateur( request );
@@ -48,7 +50,7 @@ public class ConnexionServlet extends HttpServlet {
          */
         if ( form.getErreurs().isEmpty() ) {
         	if(!authentification(utilisateur, form)) {
-            	System.err.println("mot de passe incorrect");
+            	logger.info("mot de passe incorrect");
             	form.setResultat("Authentification échouée");
             	request.setAttribute( ATT_FORM, form );
             	/*Erreur détecté donc on redirige sur le formulaire*/
@@ -78,17 +80,14 @@ public class ConnexionServlet extends HttpServlet {
      * @return true si authentification succès
      */
     public boolean authentification(Utilisateur user, ConnexionForm form) {
-    	System.err.println("On cherche utilisateur avec cet email : "+user.getEmail());
-    	if(dao.findByEmail(user.getEmail())==null) {
+    	if(personServ.findByEmail(user.getEmail())==null) {
     		form.setErreur("email", "Mail inexistant");
-    		System.err.println("Mail inexistant");
     		
     	return false;
     	}
     	
-    	System.err.println(dao.findByEmail(user.getEmail()).getPassword()+"===="+user.getMotDePasse());
-    	if(dao.findByEmail(user.getEmail()).getPassword().equals(user.getMotDePasse())) {
-    		user.setId(dao.findByEmail(user.getEmail()).getId());
+    	if(personServ.findByEmail(user.getEmail()).getPassword().equals(user.getMotDePasse())) {
+    		user.setId(personServ.findByEmail(user.getEmail()).getId());
     		return true;
     	}
     	else {

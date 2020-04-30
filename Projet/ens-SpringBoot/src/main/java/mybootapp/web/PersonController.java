@@ -26,7 +26,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.validation.Valid;
 import mybootapp.authentif.Utilisateur;
-import mybootapp.dao.DAOPerson;
+import mybootapp.dao.PersonService;
 import mybootapp.generation.Generation;
 import mybootapp.model.Party;
 import mybootapp.model.Person;
@@ -43,12 +43,12 @@ public class PersonController {
 	
 	
 	@Autowired
-	public DAOPerson dao;
+	public PersonService dao;
 	
 	@Autowired
-	public DAOPerson dao2;
+	public PersonService dao2;
 	
-	public DAOPerson getDAO() {
+	public PersonService getDAO() {
 		return dao;
 	}
 	
@@ -76,7 +76,7 @@ public class PersonController {
             @RequestParam(value = "id", required = false) Long personId) {
         if (personId != null) {
             logger.info("find person " + personId);
-            System.err.println("Il y'a une personne dont le nom est à éditer");
+            logger.info("Il y'a une personne dont le nom est à éditer");
             return dao.findPersonById(personId);
         }
         Person p = new Person("","","","");
@@ -95,20 +95,15 @@ public class PersonController {
 
     @RequestMapping(value = "/person/edit", method = RequestMethod.POST)
     public String savePerson(@ModelAttribute @Valid Person p, BindingResult result) {
-    	System.err.println("AVANT VALIDATE PERSON");
         validator.validate(p, result);
         System.err.println(p.getBirthDay());
-        System.err.println("APRES VALIDATE PERSON");
         if (result.hasErrors()) {
-        	System.err.println("Il Y A ERREUR");
             return "personForm";
         }
-        System.err.println("AVANT SAVE NOUVELLE PERSON");
         /*On récupère le group correspondant dans la BDD*/
         p.setPersonParty(dao.findPartyByPartyName(p.getPersonParty().getPartyName()));
         dao.savePerson(p);
-        System.err.println("APRES SAVE NOUVELLE PERSON");
-        System.err.println(dao.findAllPersons().toString());
+        logger.info("Une personne a été éditer !");
         return "redirect:/group/list";
     }
     
@@ -117,7 +112,6 @@ public class PersonController {
     @ModelAttribute("persons")
     Iterable<Person> persons() {
         logger.info("Making list of persons");
-        System.err.println("REFAIT la liste des personnes");
         return dao.findAllPersons();
     }
     
@@ -125,16 +119,16 @@ public class PersonController {
 	public ModelAndView editPerson(@ModelAttribute @Valid Person p, @RequestParam(value = "id", defaultValue = "-1") Long value,
 			HttpSession session) {
     		if(session.getAttribute(ATT_SESSION_USER) == null) {
-    			System.err.println("EDIT : Aucune session détecté");
+    			logger.info("Aucune session détecté !");
     			return new ModelAndView("Interdit");
     		}
     		Utilisateur user = (Utilisateur) session.getAttribute(ATT_SESSION_USER);
-    		System.err.println("EDIT : session détecté");
+    		logger.info("session détecté !");
     		if(user.getId().equals(value)) {
     			System.err.println("EDIT : "+user.getId()+"=="+value);
     			return new ModelAndView("personForm");
     			}
-    		System.err.println("EDIT : "+user.getId()+"=="+value);
+    		logger.info("edition interdite!");
     		return new ModelAndView("Interdit");
 	}
     
