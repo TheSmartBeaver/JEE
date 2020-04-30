@@ -8,25 +8,33 @@
 <html>
 <head>
 <%@ include file="/WEB-INF/jsp/head-bootstrap.jsp"%>
+<title>Modification données persos</title>
 </head>
 
 <body>
-<fieldset>
-		<legend>Menu</legend>
-		<c:choose>
-			<c:when test="${!empty sessionScope.sessionUtilisateur}">
-				<p>connecté(e) avec l'adresse :
-					${sessionScope.sessionUtilisateur.email}</p>
-				<a href="/logout"> logout </a>
-			</c:when>
-			<c:otherwise>
-				<a href="/login"> login </a>
-				<br />
-			</c:otherwise>
-		</c:choose>
-		<a href="/search"> rechercher </a>
-		<a href="${groupList}"> liste des groupes </a>
-	</fieldset>
+<div class="container">
+<h1>Menu</h1>
+	<nav>
+		<ul class="nav">
+			<c:choose>
+				<c:when test="${!empty sessionScope.sessionUtilisateur}">
+					<p>connecté(e) avec l'adresse :
+						${sessionScope.sessionUtilisateur.email}</p>
+					<li class="nav-item"><a class="nav-link" href="/logout">logout</a></li>
+					<br />
+					<li class="nav-item"><a class="nav-link"
+						href="/person/edit?id=${sessionScope.sessionUtilisateur.id}">modifier
+							mes infos</a></li>
+				</c:when>
+				<c:otherwise>
+					<li class="nav-item"><a class="nav-link " href="/login">login</a>
+						<br />
+				</c:otherwise>
+			</c:choose>
+			<li class="nav-item"><a class="nav-link" href="/search">rechercher</a></li>
+		</ul>
+	</nav>
+	</div>
 	<div class="container">
 		<h1>Edit Person</h1>
 
@@ -72,13 +80,14 @@
 					element="div" />
 			</div>
 			<div class="form-group">
-    			<label for="personParty">Groupe:</label>
-    			<form:select path="personParty" multiple="false" class="form-control">
-        			<form:option value="" label="--- Select ---" />
-        			<form:options items="${availableGroups}" />
-    			</form:select>
-    			<form:errors path="personParty" cssClass="alert alert-warning"
-        			element="div" />
+				<label for="personParty">Groupe:</label>
+				<form:select path="personParty" multiple="false"
+					class="form-control">
+					<form:option value="" label="--- Select ---" />
+					<form:options items="${availableGroups}" />
+				</form:select>
+				<form:errors path="personParty" cssClass="alert alert-warning"
+					element="div" />
 			</div>
 			<div class="form-group">
 				<label for="party">RAJOUTER LES GROUPES !! REGARDER un peu
@@ -90,6 +99,5 @@
 			</div>
 		</form:form>
 	</div>
-
 </body>
 </html>
