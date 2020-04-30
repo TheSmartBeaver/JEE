@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/include.jsp"%>
 
 <c:url var="edit" value="/person/edit" />
-
+<c:url var="groupList" value="/group/list" />
 <html>
 <head>
 <title>Personnes d'un groupe</title>

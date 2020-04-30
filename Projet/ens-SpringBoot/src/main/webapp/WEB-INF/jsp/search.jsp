@@ -19,6 +19,7 @@
 				<br />
 				<a href="/person/edit?id=${sessionScope.sessionUtilisateur.id}">
 					modifier mes infos </a>
+					<br />
 			</c:when>
 			<c:otherwise>
 				<a href="/login"> login </a>

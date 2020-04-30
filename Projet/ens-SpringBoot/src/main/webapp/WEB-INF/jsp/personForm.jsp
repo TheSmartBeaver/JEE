@@ -22,9 +22,6 @@
 						${sessionScope.sessionUtilisateur.email}</p>
 					<li class="nav-item"><a class="nav-link" href="/logout">logout</a></li>
 					<br />
-					<li class="nav-item"><a class="nav-link"
-						href="/person/edit?id=${sessionScope.sessionUtilisateur.id}">modifier
-							mes infos</a></li>
 				</c:when>
 				<c:otherwise>
 					<li class="nav-item"><a class="nav-link " href="/login">login</a>
@@ -32,6 +29,7 @@
 				</c:otherwise>
 			</c:choose>
 			<li class="nav-item"><a class="nav-link" href="/search">rechercher</a></li>
+			<li class="nav-item"><a class="nav-link" href="${groupList}">liste des groupes</a></li>
 		</ul>
 	</nav>
 	</div>
@@ -89,11 +87,6 @@
 				<form:errors path="personParty" cssClass="alert alert-warning"
 					element="div" />
 			</div>
-			<div class="form-group">
-				<label for="party">RAJOUTER LES GROUPES !! REGARDER un peu
-					"types" de product et codeProduct car party est un champs complexe</label>
-			</div>
-
 			<div class="form-group">
 				<button type="submit" class="btn btn-info">Submit</button>
 			</div>
